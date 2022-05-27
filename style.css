@@ -1,0 +1,392 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+/* Fuentes de Google */
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Sen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arsenal:ital@0;1&family=Philosopher:ital@0;1&family=Sen&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,300&display=swap');
+
+body {
+  background-color: #776341;
+}
+
+/* Inicio Nav */
+
+nav {
+  background-color: rgb(233, 217, 196);
+  height: 75px;
+  width: 88.2vw;
+  margin-left: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-nav {
+  text-align: center;
+  font-family: "DM Serif Display", serif;
+  color: #5d4b2b;
+  font-size: 35px;
+  margin-left: 190px;
+  margin-right: 350px;
+  padding: 0 30px;
+  font-weight: bold;
+}
+
+.menu-nav {
+  display: flex;
+  list-style: none;
+  margin-right: 0px;
+}
+
+.menu-nav li {
+  border-radius: 3px;
+  margin: 0 5px;
+}
+
+.menu-nav li a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-left: -10px;
+  padding: 7px 10px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  display: block;
+  color: #5d4b2b;
+}
+
+.enlace-nav {
+  display: flex;
+  list-style: none;
+  margin-right: 5px;
+  margin-left: -5px;
+}
+
+.redes-nav-ig {
+  display: flex;
+  justify-content: center;
+  width: 16px;
+  /*margin: 0 -20px;*/
+  margin-left: 50px;
+  height: fit-content;
+}
+
+.redes-nav-wp {
+  display: flex;
+  justify-content: center;
+  width: 16px;
+  margin-left: -70px;
+  height: fit-content;
+}
+
+/* Fin Nav */
+
+/* Inicio Contenido Principal */
+
+.contenedor {
+  background-color: rgb(233, 217, 196);
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.contenedor-imagenes {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-bottom: 50px;
+}
+
+.carrusel1 {
+  height: auto;
+  width: auto;
+  max-height: 300px;
+  max-width: 300px;
+  margin-left: 100px;
+  margin-right: -50px;
+  margin-top: 80px;
+}
+
+.carrusel2 {
+  height: auto;
+  width: auto;
+  max-height: 500px;
+  max-width: 500px;
+  margin-left: 100px;
+  margin-right: -300px;
+  margin-top: -20px;
+}
+
+.carrusel3 {
+  height: auto;
+  width: auto;
+  max-height: 200px;
+  max-width: 300px;
+  margin-left: 350px;
+  margin-top: 280px;
+}
+
+.div1,
+.div2,
+.div3 {
+  text-align: center;
+}
+
+.frase-imagen1 {
+  color: #5d4b2b;
+  font-family: font-family "Philosopher", sans-serif;
+  position: absolute;
+  top: 150px;
+  right: 1005px;
+  font-size: 22px;
+}
+
+.frase-imagen3 {
+  color: #5d4b2b;
+  position: absolute;
+  top: 100px;
+  right: -300px;
+  margin-top: 100px;
+  margin-bottom: -500px;
+  margin-right: 450px;
+  margin-left: 800px;
+  text-align: end;
+  font-size: 50px;
+  font-family: font-family "Philosopher", sans-serif;
+  text-transform: inherit;
+}
+
+/* Fin Contenido Principal */
+
+/* Inicio Carrusel de Compras */
+
+.contenedor-promociones {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+  display: flex;
+  text-align: center;
+  grid-template-columns: 3fr 1fr;
+  gap: 35px;
+  background-color: rgb(219, 200, 174);
+}
+
+.columna-promociones {
+  padding-top: 30px;
+}
+
+.titulo-principal-promo {
+  width: auto;
+  height: auto;
+  max-width: 300px;
+  max-height: 300px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  margin-bottom: -179px;
+  margin-right: -30px;
+  margin-left: 500px;
+  font-family: font-family "Philosopher", sans-serif;
+  font-size: 55px;
+  color: black;
+  font-style: oblique;
+  font-weight: lighter;
+  
+}
+
+.imagen-promo1 {
+  height: auto;
+  width: 300px;
+  max-height: 300px;
+  max-width: 300px;
+  margin-top: 150px;
+  margin-left: 35px;
+}
+
+.precio {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  display: flex;
+  justify-content: end;
+  margin-bottom: -40px;
+}
+.nombre-promo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  display: flex;
+  justify-content: start;
+  margin-left: 43px;
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+.texto-promo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;;
+  font-size: 15px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  margin-left: 33px;
+  margin-right: 100px;
+  display: flex;
+  justify-content: start;
+  text-align: start;
+}
+
+.btn-precio {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 17.5px;
+  text-decoration: none;
+  display: flex;
+  justify-content: start;
+  color: black;
+  margin-left: 42px;
+  margin-bottom: 60px;
+}
+
+/* Fin Carrusel de Compras*/
+
+/* Inicio Nosotros */
+.contenedor-nosotros {
+  background-color: rgb(233, 217, 196);
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+}
+
+.titulo-principal-nosotros {
+  width: auto;
+  height: auto;
+  max-width: 300px;
+  max-height: 300px;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  margin-bottom: -180px;
+  margin-right: -30px;
+  margin-left: 500px;
+  font-family: font-family "Philosopher", sans-serif;
+  font-size: 55px;
+  color: black;
+  font-style: oblique;
+  font-weight: lighter;
+}
+
+.columna-nosotros {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px; 
+}
+
+.imagen-nosotros1 {
+  height: auto;
+  width: 195px;
+  max-height: 250px;
+  max-width: 250px;
+  margin-left: 60px;
+  margin-right: -30px;
+  margin-top: 350px;
+  margin-bottom: -50px;
+  position: absolute;
+  
+
+}
+
+.imagen-nosotros2 {
+  height: auto;
+  width: auto;
+  max-height: 350px;
+  max-width: 350px;
+  margin-top: 200px;
+  margin-left: 200px;
+  
+  
+}
+
+.titulo-nosotros1{
+  font-family: font-family "Philosopher", sans-serif;
+  font-size: 25px;
+  font-style: oblique;
+  text-align: left;
+  text-transform: uppercase;
+  margin-top: 200px;
+  margin-left: 50px;
+  margin-right: 120px;
+}
+
+.parrafo-nosotros1 {
+  font-family: font-family "Philosopher", sans-serif;
+  text-align: left;
+  margin-top: 30px;
+  margin-right: 100px;
+  margin-left: 50px;
+}
+
+.parrafo-nosotros2 {
+  font-family: font-family "Philosopher", sans-serif;
+  text-align: left;
+  margin-top: 15px;
+  margin-right: 100px;
+  margin-left: 50px;
+
+}
+
+/* Fin Nosotros */
+
+/* Inicio Tips */
+
+.titulo-principal-tips {
+  width: auto;
+  height: auto;
+  max-width: 300px;
+  max-height: 300px;
+  display: flex;
+  justify-content: center;
+  margin-top: -250px;
+  margin-bottom: -180px;
+  margin-right: -30px;
+  margin-left: 500px;
+  font-family: font-family "Philosopher", sans-serif;
+  font-size: 55px;
+  color: black;
+  font-style: oblique;
+  font-weight: lighter;
+}
+
+.contenedor-tips {
+  background-color: rgb(219, 200, 174);
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+
+}
+.columna-tips {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px; 
+}
+
+/* Fin Tips */
