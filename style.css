@@ -269,7 +269,9 @@ nav {
   width: 90%;
   max-width: 1200px;
   margin: auto;
+  margin-bottom: -400px;
   padding: 40px;
+
 }
 
 .titulo-principal-nosotros {
@@ -324,6 +326,7 @@ nav {
 }
 
 .titulo-nosotros1{
+  color: #5d4b2b;
   font-family: font-family "Philosopher", sans-serif;
   font-size: 25px;
   font-style: oblique;
@@ -336,6 +339,7 @@ nav {
 
 .parrafo-nosotros1 {
   font-family: font-family "Philosopher", sans-serif;
+  font-size: 18px;
   text-align: left;
   margin-top: 30px;
   margin-right: 100px;
@@ -344,6 +348,7 @@ nav {
 
 .parrafo-nosotros2 {
   font-family: font-family "Philosopher", sans-serif;
+  font-size: 18px;
   text-align: left;
   margin-top: 15px;
   margin-right: 100px;
@@ -362,8 +367,8 @@ nav {
   max-height: 300px;
   display: flex;
   justify-content: center;
-  margin-top: -250px;
-  margin-bottom: -180px;
+  margin-top: 10px;
+  margin-bottom: -80px;
   margin-right: -30px;
   margin-left: 500px;
   font-family: font-family "Philosopher", sans-serif;
@@ -371,6 +376,20 @@ nav {
   color: black;
   font-style: oblique;
   font-weight: lighter;
+}
+
+.subtitulo-principal-tips{
+  color: #5d4b2b;
+  font-family: font-family "Philosopher", sans-serif;
+  font-weight: inherit;
+  font-size: 26px;
+  font-style: italic;
+  text-align:left;
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 150px;
+  margin-right: 900px;
+  margin-bottom: 50px;
 }
 
 .contenedor-tips {
@@ -389,4 +408,56 @@ nav {
   grid-row-gap: 0px; 
 }
 
+.titulo-tips1{
+  font-family: font-family "Philosopher", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  font-style: normal;
+  text-align: right;
+  text-transform: uppercase;
+  margin-top: 350px;
+  margin-left: 350px;
+  margin-right: -170px;
+}
+
+.parrafo-tips1 {
+  font-family: font-family "Philosopher", sans-serif;
+  font-size: 17px;
+  text-align: right;
+  margin-top: 15px;
+  margin-right: -170px;
+  margin-left: 550px;
+}
+
+.parrafo-tips2 {
+  font-family: font-family "Philosopher", sans-serif;
+  text-align: left;
+  margin-top: 50px;
+  margin-right: 100px;
+  margin-left: 50px;
+}
+
+.imagen-tips1 {
+  height: auto;
+  width: 195px;
+  max-height: 200px;
+  max-width: 200px;
+  margin-left: 60px;
+  margin-right: -30px;
+  margin-top: 150px;
+  margin-bottom: -50px;
+  position: absolute;
+  
+
+}
+
+.imagen-tips2 {
+  height: auto;
+  width: auto;
+  max-height: 450px;
+  max-width: 450px;
+  margin-top: 100px;
+  margin-left: 200px;
+  
+}
 /* Fin Tips */
