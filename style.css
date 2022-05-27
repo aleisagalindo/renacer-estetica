@@ -485,7 +485,7 @@ nav {
   text-align: left;
   text-transform: uppercase;
   margin-top: -950px;
-  margin-left: 400px;
+  margin-left: 380px;
   margin-right: 250px;
 }
 
@@ -494,9 +494,9 @@ nav {
   font-size: 17px;
   text-align: left;
   margin-top: 15px;
-  margin-bottom: 100px;
+  margin-bottom: -40px;
   margin-right: 250px;
-  margin-left: 400px;
+  margin-left: 380px;
 }
 
 /*.imagen-tips3 {
@@ -521,7 +521,49 @@ nav {
   margin-bottom: 20px;
   margin-left: -200px;
 }
-
-
 /* Tip 2 */
+
+/* Tip 3 */
+
+.contenedor-tips3 {
+  background-color: rgb(219, 200, 174);
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+
+}
+
+.titulo-tips3{
+  font-family: font-family "Philosopher", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  font-style: normal;
+  text-align: right;
+  text-transform: uppercase;
+  margin-top: 420px;
+  margin-left: 350px;
+  margin-right: -170px;
+}
+
+.parrafo-tips3 {
+  font-family: font-family "Philosopher", sans-serif;
+  font-size: 17px;
+  text-align: right;
+  margin-top: 15px;
+  margin-right: -170px;
+  margin-left: 300px;
+}
+
+.imagen-tips4 {
+  height: auto;
+  width: auto;
+  max-height: 450px;
+  max-width: 450px;
+  margin-top: 150px;
+  margin-left: 200px;
+}
+
+/* Tip 3 */
+
 /* Fin Tips */
