@@ -7,11 +7,13 @@
   box-sizing: border-box;
 }
 
-/* Fuentes de Google */
+/* Inicio Fuentes de Google */
 
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Sen&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arsenal:ital@0;1&family=Philosopher:ital@0;1&family=Sen&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,300&display=swap');
+
+/* Fin Fuentes de Google */
 
 body {
   background-color: #776341;
@@ -565,5 +567,97 @@ nav {
 }
 
 /* Tip 3 */
-
 /* Fin Tips */
+
+/* Inicio Inspo */
+
+.contenedor-inspo {
+  background-color: rgb(219, 200, 174);
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+}
+.inspo {
+  height: auto;
+  width: auto;
+  max-height: 1200px;
+  max-width: 1200px;
+  margin-top: -600px;
+  margin-left: -40px;
+}
+
+/* Fin Inspo */
+
+/* Inicio Footer */
+.pie-de-pagina{
+  display: flex;
+  width: 90%;
+  background-color: rgb(187, 168, 142);
+  margin-left: 72px;
+  padding: 40px;
+}
+
+.pie-de-pagina .grupo-1 {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 50px;
+  padding: 40px 0px;
+}
+.contactanos {
+  width: auto;
+  height: auto;
+  max-width: 300px;
+  max-height: 300px;
+  display: flex;
+  justify-content: left;
+  margin-bottom: 55px;
+  font-family: font-family "Philosopher", sans-serif;
+  font-size: 55px;
+  color: black;
+  font-style: oblique;
+  font-weight: lighter;
+}
+
+.pie-de-pagina .grupo-2 {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 50px;
+  padding: 40px 0px;
+}
+
+.escribinos {
+  text-align: left;
+  font-family: font-family "Philosopher", sans-serif;
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  /*margin-right: 200px;*/
+  font-size: 15px;
+}
+
+.nuestras-redes {
+  text-align: left;
+  font-family: font-family "Philosopher", sans-serif;
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+.ig-footer {
+  font-family: font-family "Philosopher", sans-serif;
+  color: black;
+  text-decoration: none;
+}
+.wp-footer {
+  font-family: font-family "Philosopher", sans-serif;
+  text-decoration: none;
+  color: black;
+}
+/* Fin Footer */
