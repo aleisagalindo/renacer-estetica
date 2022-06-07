@@ -7,7 +7,25 @@
   box-sizing: border-box;
 }
 
-/* Inicio Fuentes de Google */
+/* Inicio Fuentes */
+@font-face {
+  font-family: Lovelace-Bold-Italic;
+  src: url(/multimedia/fonts/lovelace/Lovelace-Bold-Italic.ttf);
+}
+@font-face {
+  font-family: Lovelace-Regular;
+  src: url(/multimedia/fonts/lovelace/Lovelace-Regular.ttf);
+}
+@font-face {
+  font-family: Montserrat-SemiBold;
+  src: url(/multimedia/fonts/montserrat/Montserrat-SemiBold.ttf);
+}
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url(/multimedia/fonts/montserrat/Montserrat-Regular.ttf);
+}
+
+
 
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Sen&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arsenal:ital@0;1&family=Philosopher:ital@0;1&family=Sen&display=swap");
@@ -16,7 +34,7 @@
 /* Fin Fuentes de Google */
 
 body {
-  background-color: #776341;
+  background-color: rgb(233, 217, 196);
 }
 
 /* Inicio Nav */
@@ -24,28 +42,31 @@ body {
 nav {
   background-color: rgb(233, 217, 196);
   height: 75px;
-  width: 88.2vw;
+  width: 90%;
   margin-left: 72px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
 }
 
 .logo-nav {
   text-align: center;
-  font-family: "DM Serif Display", serif;
+  font-family: Lovelace-Italic-Bold;
   color: #5d4b2b;
   font-size: 35px;
   margin-left: 190px;
   margin-right: 350px;
   padding: 0 30px;
   font-weight: bold;
+  display: flex;
 }
 
 .menu-nav {
   display: flex;
   list-style: none;
   margin-right: 0px;
+  flex-direction: row;
 }
 
 .menu-nav li {
@@ -54,14 +75,14 @@ nav {
 }
 
 .menu-nav li a {
-  font-family: 'Montserrat', sans-serif;
+  font-family: Montserrat-Regular;
   font-weight: 400;
   text-transform: uppercase;
   margin-top: 10px;
   margin-left: -10px;
   padding: 7px 10px;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: bold;
   display: block;
   color: #5d4b2b;
@@ -150,7 +171,7 @@ nav {
 
 .frase-imagen1 {
   color: #5d4b2b;
-  font-family: 'Philosopher', sans-serif;
+  font-family: Lovelace-Italic-Bold;
   position: absolute;
   top: 150px;
   right: 1005px;
@@ -168,7 +189,7 @@ nav {
   margin-left: 800px;
   text-align: end;
   font-size: 50px;
-  font-family: 'Philosopher', sans-serif;
+  font-family: Lovelace-Italic-Bold;
   text-transform: inherit;
 }
 
@@ -181,29 +202,39 @@ nav {
   max-width: 1200px;
   margin: auto;
   padding: 40px;
-  display: flex;
+  display: grid;
   text-align: center;
-  grid-template-columns: 3fr 1fr;
-  gap: 35px;
+  grid-template-areas: "columna1 columna2 columna3"
+                       "imagen-promo1 imagen-promo2 imagen-promo3"
+                       "nombre-promo nombre-promo nombre-promo"
+                       "texto-promo texto-promo texto-promo";
+  gap: 3px;
   background-color: rgb(219, 200, 174);
 }
 
-.columna-promociones {
-  padding-top: 30px;
+.columna1{
+  grid-area: columna1;
+}
+.columna2 {
+  grid-area: columna2;
+}
+.columna3 {
+  grid-area: columna3;
 }
 
 .titulo-principal-promo {
   width: auto;
   height: auto;
-  max-width: 300px;
-  max-height: 300px;
-  display: flex;
+  max-width: 18.75rem;
+  max-height: 18.75rem;
+  display: grid;
+  grid-template-columns: (3, 1fr);
   justify-content: center;
   padding-bottom: 50px;
   margin-bottom: -179px;
   margin-right: -30px;
-  margin-left: 500px;
-  font-family: 'Philosopher', sans-serif;
+  margin-left: 31.25rem;
+  font-family: Lovelace-Italic-Bold;
   font-size: 55px;
   color: black;
   font-style: oblique;
@@ -213,41 +244,92 @@ nav {
 
 .imagen-promo1 {
   height: auto;
+  width: 18.75rem;
+  max-height: 18.75rem;
+  max-width: 300px;
+  margin-top: 150px;
+  margin-right: 5px;
+  grid-area: imagen-promo1;
+}
+.imagen-promo2 {
+  height: auto;
   width: 300px;
   max-height: 300px;
   max-width: 300px;
   margin-top: 150px;
-  margin-left: 35px;
+  margin-right: 25px;
+  grid-area: imagen-promo2;
+}
+.imagen-promo3 {
+  height: auto;
+  width: 300px;
+  max-height: 300px;
+  max-width: 300px;
+  margin-top: 150px;
+  grid-area: imagen-promo3;
 }
 
-.precio {
+
+/*.precio {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   display: flex;
   justify-content: end;
-  margin-bottom: -40px;
-}
+  margin-bottom: -50px;
+  margin-right: 20px;
+}*/
 .nombre-promo {
-  font-family: 'Montserrat', sans-serif;
+  font-family: Montserrat-SemiBold;
   font-weight: 400;
-  font-size: 18px;
-  display: flex;
+  font-size: 16px;
+  display: grid;
   justify-content: start;
-  margin-left: 43px;
-  margin-bottom: 25px;
+  margin-left: 32px;
+  margin-bottom: 15px;
   margin-top: 15px;
+  grid-area: nombre-promo;
 }
-.texto-promo {
-  font-family: 'Montserrat', sans-serif;
+
+.texto-promo1 {
+  font-family: Montserrat-Regular;
   font-weight: 400;;
   font-size: 15px;
   padding-left: 10px;
   margin-bottom: 10px;
-  margin-left: 33px;
+  margin-left: 22px;
   margin-right: 100px;
   display: flex;
   justify-content: start;
   text-align: start;
+  grid-area: texto-promo;
+}
+
+.texto-promo2 {
+  font-family: Montserrat-Regular;
+  font-weight: 400;;
+  font-size: 15px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  margin-left: 22px;
+  margin-right: 100px;
+  display: flex;
+  justify-content: start;
+  text-align: start;
+  grid-area: texto-promo;
+}
+
+.texto-promo3 {
+  font-family: Montserrat-Regular;
+  font-weight: 400;;
+  font-size: 15px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  margin-left: 22px;
+  margin-right: 140px;
+  display: flex;
+  justify-content: start;
+  text-align: start;
+  grid-area: texto-promo;
 }
 
 .btn-precio {
@@ -259,7 +341,7 @@ nav {
   display: flex;
   justify-content: start;
   color: black;
-  margin-left: 42px;
+  margin-left: 31px;
   margin-bottom: 60px;
 }
 
@@ -287,7 +369,7 @@ nav {
   margin-bottom: -180px;
   margin-right: -30px;
   margin-left: 500px;
-  font-family: 'Philosopher', sans-serif;
+  font-family: Lovelace-Italic-Bold;
   font-size: 55px;
   color: black;
   font-style: oblique;
@@ -329,7 +411,7 @@ nav {
 
 .titulo-nosotros1{
   color: #5d4b2b;
-  font-family: 'Philosopher', sans-serif;
+  font-family: Lovelace-Italic-Bold;
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
@@ -341,7 +423,7 @@ nav {
 }
 
 .parrafo-nosotros1 {
-  font-family: 'Philosopher', sans-serif;
+  font-family: Lovelace-Italic-Bold;
   font-size: 18px;
   text-align: left;
   margin-top: 30px;
@@ -350,7 +432,7 @@ nav {
 }
 
 .parrafo-nosotros2 {
-  font-family: ‘Philosopher’, sans-serif;
+  font-family: Lovelace-Italic-Bold;
   font-size: 18px;
   text-align: left;
   margin-top: 15px;
@@ -384,7 +466,7 @@ nav {
   margin-bottom: -150px;
   margin-right: -30px;
   margin-left: 500px;
-  font-family: ‘Philosopher’, sans-serif;
+  font-family: Lovelace-Italic-Bold;
   font-size: 55px;
   color: black;
   font-style: oblique;
@@ -393,7 +475,7 @@ nav {
 
 .subtitulo-principal-tips{
   color: #5d4b2b;
-  font-family: ‘Philosopher’, sans-serif;
+  font-family: Lovelace-Italic-Bold;
   font-weight: inherit;
   font-size: 26px;
   font-style: italic;
@@ -414,7 +496,7 @@ nav {
 }
 
 .titulo-tips1{
-  font-family: 'Philosopher', sans-serif;
+  font-family: Lovelace-Italic-Bold;
   font-size: 25px;
   font-weight: 500;
   font-style: normal;
@@ -426,7 +508,7 @@ nav {
 }
 
 .parrafo-tips1 {
-  font-family: 'Philosopher', sans-serif;
+  font-family: Lovelace-Italic-Bold;
   font-size: 17px;
   text-align: right;
   margin-top: 15px;
@@ -480,7 +562,7 @@ nav {
 }
 
 .titulo-tips2{
-  font-family: 'Philosopher', sans-serif;
+  font-family: Lovelace-Italic-Bold;
   font-size: 25px;
   font-weight: 500;
   font-style: normal;
@@ -492,7 +574,7 @@ nav {
 }
 
 .parrafo-tips2 {
-  font-family: 'Philosopher', sans-serif;
+  font-family: Lovelace-Italic-Bold;
   font-size: 17px;
   text-align: left;
   margin-top: 15px;
@@ -537,7 +619,7 @@ nav {
 }
 
 .titulo-tips3{
-  font-family: 'Philosopher', sans-serif;
+  font-family: Lovelace-Italic-Bold;
   font-size: 25px;
   font-weight: 500;
   font-style: normal;
@@ -549,7 +631,7 @@ nav {
 }
 
 .parrafo-tips3 {
-  font-family: 'Philosopher', sans-serif;
+  font-family: Lovelace-Italic-Bold;
   font-size: 17px;
   text-align: right;
   margin-top: 15px;
@@ -617,7 +699,7 @@ nav {
   justify-content: left;
   margin-left: 150px;
   margin-bottom: 75px;
-  font-family: 'Philosopher', sans-serif;
+  font-family: Lovelace-Italic-Bold;
   font-size: 55px;
   color: black;
   font-style: oblique;
@@ -636,7 +718,7 @@ nav {
 
 .escribinos {
   text-align: left;
-  font-family: 'Philosopher', sans-serif;
+  font-family: Lovelace-Italic-Bold;
   color: black;
   margin-top: 20px;
   margin-left: 100px;
@@ -647,7 +729,7 @@ nav {
 
 .nuestras-redes {
   text-align: left;
-  font-family: 'Philosopher', sans-serif;
+  font-family: Lovelace-Italic-Bold;
   color: black;
   margin-top: 20px;
   margin-left: 100px;
@@ -655,12 +737,12 @@ nav {
   font-size: 15px;
 }
 .ig-footer {
-  font-family: 'Philosopher', sans-serif;
+  font-family: Lovelace-Italic-Bold;
   color: black;
   text-decoration: none;
 }
 .wp-footer {
-  font-family: 'Philosopher', sans-serif;
+  font-family: Lovelace-Italic-Bold;
   text-decoration: none;
   color: black;
 }
@@ -675,16 +757,397 @@ nav {
 }
 /* Fin Footer */
 
-/* Inicio Galeria */
 
-.contenedor-galeria {
+/* Inicio Vista Mobile */
+.nav-mobile {
   background-color: rgb(233, 217, 196);
-  width: 100%;
-  max-width: 1200px;
+  height: 4.6875rem;
+  width: 90%;
+  display: none;
+  list-style: none;
+}
+.nav-mobile li {
+  list-style: none;
+}
+.nav-mobile ul li a {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+
+.icono-info-mb {
+display: none;
+width: 10%;
+height: 10%;
+}
+.icono-tips-mb {
+  display: none;
+  width: 10%;
+  height: 10%;
+}
+
+
+.carrusel-mobile {
+  display: none;
+}
+
+.container-nosotros-mb {
+  display: none;
+}
+
+.titulo-principal-nosotros-mb {
+  display: none;
+}
+
+.parrafo-nosotros-mb {
+  display: none;
+}
+
+.contenedor-promociones-mb {
+  display: none;
+}
+
+.contenedor-tips-mb{
+  display: none;
+}
+
+.titulo-principal-tips-mb {
+  display: none;
+}
+
+.subtitulo-tips-mb {
+  display: none;
+}
+
+.texto-tip-mb {
+  display: none;
+}
+
+.pie-de-pagina-mb {
+  display: none;
+}
+
+.ig-footer-mb {
+  display: none;
+}
+
+.wp-footer-mb {
+  display: none;
+}
+
+.contactanos-mb{
+  display: none;
+}
+
+
+/* Fin Vista Mobile */
+
+/* Inicio  @media queries */
+
+@media screen and (max-width: 575.98px) {
+  
+nav {
+  display: none;
+}
+
+.nav-mobile {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+  padding: none;
+}
+
+.nav-mobile ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-nav-mobile {
+  font-family: Lovelace-Italic-Bold;
+  color: #5d4b2b;
+  font-size: 35px;
+  font-weight: 800;
+  display: flex;
+  justify-content: start;
+  margin-left: 1rem;
+}
+
+ .icono-info-mb {
+  display: flex;
+  width: 80%;
+  height: auto;
+  max-width: 2.5rem;
+  min-width: 1.875rem;
+  margin-top: 2.81rem;
+  margin-left: 4.18rem;
+  padding: auto;
+  }
+
+  .icono-tips-mb {
+    display: flex;
+    width: 80%;
+    height: auto;
+    max-width: 2.5rem;
+    min-width: 1.875rem;
+    margin-top: 2.62rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding: auto;
+  }
+
+  .icono-turnos-mb {
+    display: flex;
+    width: 80%;
+    height: auto;
+    max-width: 2.5rem;
+    min-width: 1.875rem;
+    margin-top: 2.72rem;
+    margin-right: 8rem;
+    padding: auto;
+
+
+  }
+
+  .carrusel-mobile {
+    display: flex;
+  }
+
+  .frase-imagen1, .frase-imagen3, .carrusel1, .carrusel2,.carrusel3 {
+    display: none;
+  }
+
+  .carrusel3 {
+    display: none;
+  }
+
+  .carrusel1mb {
+    max-width: fit-content;
+  }
+
+.titulo-principal-promo {
+  display: flex;
+  text-align: center;
+  font-size: 40px;
   margin: auto;
-  margin-bottom: -1100px;
-  padding: 40px 40px;
+  padding-top: auto;
+}
+
+  .contenedor-promociones {
+  
+    grid-template-areas: "columna1"
+                         "columna2"
+                         "columna3";
+    row-gap: -300px;
+    margin-left: -1.25rem;
+    padding: none;
+    background-color: rgb(233, 217, 196);
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    row-gap: 50px;
+}
+
+.imagen-promo1, .imagen-promo2, .imagen-promo3 {
+  height: auto;
+  width: 18.75rem;
+  max-height: 18.75rem;
+  max-width: 18.75rem;
+  margin: auto;
+  padding: auto;
+  grid-area: imagen-promo1;
+}
+
+
+.texto-promo1, 
+.texto-promo2, 
+.texto-promo3,
+.nombre-promo,
+.btn-precio{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 1.25rem 0.62rem;
+  padding: auto;
+}
+
+.contenedor-nosotros {
+  display: none;
+}
+
+.titulo-principal-nosotros {
+  display: none;
+}
+
+.container-nosotros-mb {
+  display: flex;
+  margin-top: 1.25rem;
+}
+
+.titulo-principal-nosotros-mb {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  color: black;
+  font-size: 40px;
+  font-family: Lovelace-Italic-Bold;
+  font-style: oblique;
+  font-weight: lighter;
+}
+.parrafo-nosotros-mb {
+  display: flex;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-family: Lovelace-Italic-Bold;
+  font-size: 18px;
+  padding: 25px;
+}
+
+.contenedor-tips-mb {
+  display: grid;
+  grid-template-areas: "columna1"
+                       "columna2"
+                       "columna3";
+    
+    margin-left: -1.25rem;
+    padding: none;
+    background-color: rgb(233, 217, 196);
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    row-gap: 50px;
+}
+
+.imagen-tips1, .imagen-tips2, .imagen-tips3 {
+  position: relative;
+  display:grid;
+  height: auto;
+  width: 18.75rem;
+  max-height: 18.75rem;
+  max-width: 18.75rem;
+  margin: auto;
+  padding: auto;
+}
+
+
+.titulo-principal-tips {
+  display: none;
+}
+
+.subtitulo-principal-tips{
+  display: none;
+}
+
+.titulo-principal-tips-mb {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  color: black;
+  font-size: 40px;
+  font-family: Lovelace-Italic-Bold;
+  font-style: oblique;
+  font-weight: lighter;
+}
+
+.subtitulo-tips-mb {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 50px 25px;
+  padding-bottom: 45px;
+  font-size: 25px;
+  font-family: Lovelace-Italic-Bold;
+  font-style: oblique;
+  font-weight: lighter;
+  color: #5d4b2b;
+}
+
+.nombre-tip-mb {
+  font-family: Lovelace-Italic-Bold;
+  font-size: 20px;
+  font-weight: 800;
+  font-style: bold;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 15px;
+  margin: 1.25rem 0.62rem;
+}
+
+.texto-tip-mb {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 1.25rem 0.62rem;
+  padding: auto;
+  font-family: Lovelace-Italic-Bold;
+}
+
+.contenedor-tips1, .contenedor-tips2, .contenedor-tips3 {
+  display: none;
+}
+
+.contenedor-inspo {
+  display: none;
+}
+
+
+.pie-de-pagina {
+  display: none;
+}
+
+.pie-de-pagina-mb {
+  background: rgb(187, 168, 142);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: auto;
+}
+
+
+.pie-de-pagina-mb div a {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pie-de-pagina-mb div {
+  text-align: center;
+}
+
+.contactanos-mb {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  grid-area: contactanos-mb;
+  margin: auto;
+}
+
+.ig-footer-mb {
+  margin-top: 45px;
+  padding: auto;
+  width: 100%;
+  max-width: 2.25rem;
+  display: flex;
+  grid-area: ig-footer-mb;
+}
+
+.wp-footer-mb {
+  width: 10%;
+  max-width: 1.25rem;
+  display: flex;
+}
+
+.derechos {
+
+  margin-top: 200px;
+  text-align: center;
+}
+
 
 }
-/* Fin Galeria */
-
+/* Fin @media queries */
