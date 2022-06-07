@@ -757,6 +757,34 @@ nav {
 }
 /* Fin Footer */
 
+/* Inicio Sección Turnos */
+
+.container-turnos {
+  display: flex;
+  justify-content: center;
+}
+
+.parrafo-turnos {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 25px;
+  font-family: Lovelace-Italic-Bold;
+  color: black;
+  padding: 100px;
+}
+
+.container-turnos div a {
+  display: flex;
+  justify-content: center;
+}
+
+.wp-turnos {
+  width: 10%;
+}
+
+/* Fin Sección Turnos */
+
 
 /* Inicio Vista Mobile */
 .nav-mobile {
@@ -1148,6 +1176,9 @@ nav {
   text-align: center;
 }
 
+.parrafo-turnos {
+  font-size: 18px;
+}
 
 }
 /* Fin @media queries */
