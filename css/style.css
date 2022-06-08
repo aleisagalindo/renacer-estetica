@@ -1,0 +1,24 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box; }
+
+.container-turnos {
+  display: flex;
+  justify-content: center; }
+  .container-turnos .parrafo-turnos {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    font-family: Lovelace-Italic-Bold;
+    color: black;
+    padding: 100px; }
+  .container-turnos a {
+    display: flex;
+    justify-content: center; }
+    .container-turnos a .wp-turnos {
+      width: 10%; }
