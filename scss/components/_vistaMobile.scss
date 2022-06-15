@@ -1,0 +1,87 @@
+/* Fin Sección Turnos */
+
+
+/* Inicio Vista Mobile */
+.nav-mobile {
+    background-color: rgb(233, 217, 196);
+    height: 4.6875rem;
+    width: 90%;
+    @extend %displaynoneMB;
+    list-style: none;
+  }
+  .nav-mobile li {
+    list-style: none;
+  }
+  .nav-mobile ul li a {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  
+  .icono-info-mb {
+    @extend %displaynoneMB;
+  width: 10%;
+  height: 10%;
+  }
+  .icono-tips-mb {
+    @extend %displaynoneMB;
+    width: 10%;
+    height: 10%;
+  }
+  
+  
+  .carrusel-mobile {
+    @extend %displaynoneMB;
+  }
+  
+  .container-nosotros-mb {
+    @extend %displaynoneMB;
+  }
+  
+  .titulo-principal-nosotros-mb {
+    @extend %displaynoneMB;
+  }
+  
+  .parrafo-nosotros-mb {
+    @extend %displaynoneMB;
+  }
+  
+  .contenedor-promociones-mb {
+    @extend %displaynoneMB;
+  }
+  
+  .contenedor-tips-mb{
+    @extend %displaynoneMB;
+  }
+  
+  .titulo-principal-tips-mb {
+    @extend %displaynoneMB;
+  }
+  
+  .subtitulo-tips-mb {
+    @extend %displaynoneMB;
+  }
+  
+  .texto-tip-mb {
+    @extend %displaynoneMB;
+  }
+  
+  .pie-de-pagina-mb {
+    @extend %displaynoneMB;
+  }
+  
+  .ig-footer-mb {
+    @extend %displaynoneMB;
+  }
+  
+  .wp-footer-mb {
+    @extend %displaynoneMB;
+  }
+  
+  .contactanos-mb{
+    @extend %displaynoneMB;
+  }
+  
+  /* Fin Vista Mobile */
+  

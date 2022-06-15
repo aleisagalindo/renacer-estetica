@@ -1,0 +1,144 @@
+@import "base/mixins";
+
+/* Inicio Carrusel de Compras */
+
+.contenedor-promociones {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+    display: grid;
+    text-align: center;
+    grid-template-areas: "columna1 columna2 columna3"
+                         "imagen-promo1 imagen-promo2 imagen-promo3"
+                         "nombre-promo nombre-promo nombre-promo"
+                         "texto-promo texto-promo texto-promo";
+    gap: 3px;
+    background-color: rgb(219, 200, 174);
+  }
+  
+  .columna1{
+    grid-area: columna1;
+  }
+  .columna2 {
+    grid-area: columna2;
+  }
+  .columna3 {
+    grid-area: columna3;
+  }
+  
+  .titulo-principal-promo {
+    width: auto;
+    height: auto;
+    max-width: 18.75rem;
+    max-height: 18.75rem;
+    display: grid;
+    grid-template-columns: (3, 1fr);
+    justify-content: center;
+    padding-bottom: 50px;
+    margin-bottom: -179px;
+    margin-right: -30px;
+    margin-left: 31.25rem;
+    font-family: Lovelace-Italic-Bold;
+    font-size: 55px;
+    color: black;
+    font-style: oblique;
+    font-weight: lighter;
+    
+  }
+
+  .imagen-promo1 {
+    @include imgPromo (auto, 18.75rem, 18.75rem, 18.75rem, 9.375rem);
+    margin-right: 5px;
+    grid-area: imagen-promo1;
+  }
+  
+  .imagen-promo2 {
+    @include imgPromo (auto, 18.75rem, 18.75rem, 18.75rem, 9.375rem);
+    margin-right: 1.56rem;
+    grid-area: imagen-promo2;
+  }
+  
+  .imagen-promo3 {
+    @include imgPromo (auto, 18.75rem, 18.75rem, 18.75rem, 9.375rem);
+    grid-area: imagen-promo3;
+  }
+  
+  
+  /*.precio {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: end;
+    margin-bottom: -50px;
+    margin-right: 20px;
+  }*/
+  .nombre-promo {
+    font-family: Montserrat-SemiBold;
+    font-weight: 400;
+    font-size: 16px;
+    display: grid;
+    justify-content: start;
+    margin-left: 32px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    grid-area: nombre-promo;
+  }
+  
+  .texto-promo1 {
+    font-family: Montserrat-Regular;
+    font-weight: 400;;
+    font-size: 15px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    margin-left: 22px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: start;
+    text-align: start;
+    grid-area: texto-promo;
+  }
+  
+  .texto-promo2 {
+    font-family: Montserrat-Regular;
+    font-weight: 400;;
+    font-size: 15px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    margin-left: 22px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: start;
+    text-align: start;
+    grid-area: texto-promo;
+  }
+  
+  .texto-promo3 {
+    font-family: Montserrat-Regular;
+    font-weight: 400;;
+    font-size: 15px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    margin-left: 22px;
+    margin-right: 140px;
+    display: flex;
+    justify-content: start;
+    text-align: start;
+    grid-area: texto-promo;
+  }
+  
+  .btn-precio {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 17.5px;
+    text-decoration: none;
+    display: flex;
+    justify-content: start;
+    color: black;
+    margin-left: 31px;
+    margin-bottom: 60px;
+  }
+  
+  /* Fin Carrusel de Compras*/
+  

@@ -1,35 +1,20 @@
-*,
-*:before,
-*:after {
-  margin: 0;
-  padding: 0;
-  outline: 0;
-  box-sizing: border-box;
-}
+@import "components/header";
+@import "components/main";
+@import "components/promociones";
+@import "components/nosotros";
+@import "components/tips";
+@import "components/inspo";
+@import "components/footer";
+@import "components/turnos";
+@import "components/vistaMobile";
+@import "base/mediaquerys";
+@import "base/fuentes";
+@import "base/body";
+@import "base/variables";
+@import "base/listas";
+@import "base/extends";
+@import "base/mixins";
 
-.container-turnos {
-    display: flex;
-    justify-content: center;
-    
-    .parrafo-turnos {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 25px;
-    font-family: Lovelace-Italic-Bold;
-    color: black;
-    padding: 100px;
-    }
 
-    a {
-        display: flex;
-        justify-content: center;
 
-        .wp-turnos {
-            width: 10%;
-        }
-        
-    }
-
-  }
   

@@ -1,0 +1,76 @@
+@import "base/listas";
+
+/* Inicio Nav */
+
+nav {
+    background-color: nth($colores, 1);
+    height: 4.68rem;
+    width: 90%;
+    margin-left: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  .logo-nav {
+    text-align: center;
+    font-family: Lovelace-Italic-Bold;
+    color: nth($colores, 3);
+    font-size: 35px;
+    margin-left: 12.5rem;
+    margin-right: 21.875rem;
+    padding: 0 1.87rem;
+    font-weight: bold;
+    display: flex;
+  }
+  
+  .menu-nav {
+    display: flex;
+    list-style: none;
+    margin-right: 0px;
+    flex-direction: row;
+    li {
+      border-radius: 3px;
+      margin: 0 0.3125rem;
+    }
+    a {
+      font-family: Montserrat-Regular;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-top: 10px;
+      margin-left: -10px;
+      padding: 7px 10px;
+      text-decoration: none;
+      font-size: 10px;
+      font-weight: bold;
+      display: block;
+      color: nth($colores, 3);
+    }
+  }
+  
+  
+  .enlace-nav {
+    display: flex;
+    list-style: none;
+    margin-right: 0.31rem;
+    margin-left: -0.31rem;
+  }
+  
+  .redes-nav-ig {
+    display: flex;
+    justify-content: center;
+    width: 16px;
+    margin-left: 3.12rem;
+    height: fit-content;
+  }
+  
+  .redes-nav-wp {
+    display: flex;
+    justify-content: center;
+    width: 16px;
+    margin-left: -70px;
+    height: fit-content;
+  }
+  
+  /* Fin Nav */

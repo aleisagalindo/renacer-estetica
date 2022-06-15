@@ -1,0 +1,207 @@
+/* Inicio Tips */
+
+/* Tip 1  */
+.contenedor-tips1 {
+    background-color: rgb(219, 200, 174);
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+  
+  }
+  
+  .titulo-principal-tips {
+    width: auto;
+    height: auto;
+    max-width: 300px;
+    max-height: 300px;
+    display: flex;
+    justify-content: center;
+    margin-top: 800px;
+    margin-bottom: -150px;
+    margin-right: -30px;
+    margin-left: 500px;
+    font-family: Lovelace-Italic-Bold;
+    font-size: 55px;
+    color: black;
+    font-style: oblique;
+    font-weight: lighter;
+  }
+  
+  .subtitulo-principal-tips{
+    color: #5d4b2b;
+    font-family: Lovelace-Italic-Bold;
+    font-weight: inherit;
+    font-size: 26px;
+    font-style: italic;
+    text-align:left;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 150px;
+    margin-right: 900px;
+    margin-bottom: 50px;
+  }
+  
+  .columna-tips1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+  }
+  
+  .titulo-tips1{
+    font-family: Lovelace-Italic-Bold;
+    font-size: 25px;
+    font-weight: 500;
+    font-style: normal;
+    text-align: right;
+    text-transform: uppercase;
+    margin-top: 450px;
+    margin-left: 350px;
+    margin-right: -170px;
+  }
+  
+  .parrafo-tips1 {
+    font-family: Lovelace-Italic-Bold;
+    font-size: 17px;
+    text-align: right;
+    margin-top: 15px;
+    margin-right: -170px;
+    margin-left: 550px;
+  }
+  
+  .imagen-tips1 {
+    height: auto;
+    width: 195px;
+    max-height: 200px;
+    max-width: 200px;
+    margin-left: 60px;
+    margin-right: -30px;
+    margin-top: 250px;
+    margin-bottom: -50px;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .imagen-tips2 {
+    height: auto;
+    width: auto;
+    max-height: 450px;
+    max-width: 450px;
+    margin-top: 150px;
+    margin-left: 200px;
+  }
+  
+  .imagen-tips2:hover {filter: grayscale(80%);}
+  /* Tip 1  */
+  
+  /* Tip 2 */
+  
+  .contenedor-tips2 {
+    background-color: rgb(219, 200, 174);
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: -700px;
+    padding: 40px;
+  
+  }
+  
+  .columna-tips {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+  }
+  
+  .titulo-tips2{
+    font-family: Lovelace-Italic-Bold;
+    font-size: 25px;
+    font-weight: 500;
+    font-style: normal;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: -950px;
+    margin-left: 380px;
+    margin-right: 250px;
+  }
+  
+  .parrafo-tips2 {
+    font-family: Lovelace-Italic-Bold;
+    font-size: 17px;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: -40px;
+    margin-right: 250px;
+    margin-left: 380px;
+  }
+  
+  /*.imagen-tips3 {
+    height: auto;
+    width: 195px;
+    max-height: 200px;
+    max-width: 200px;
+    margin-left: -110px;
+    margin-right: -30px;
+    margin-top: 500px;
+    margin-bottom: -50px;
+    position: absolute;
+    z-index: 1;
+  }*/
+  
+  .video-tips {
+    height: auto;
+    width: auto;
+    max-height: 550px;
+    max-width: 450px;
+    margin-top: 150px;
+    margin-bottom: 20px;
+    margin-left: -200px;
+  }
+  /* Tip 2 */
+  
+  /* Tip 3 */
+  
+  .contenedor-tips3 {
+    background-color: rgb(219, 200, 174);
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+  
+  }
+  
+  .titulo-tips3{
+    font-family: Lovelace-Italic-Bold;
+    font-size: 25px;
+    font-weight: 500;
+    font-style: normal;
+    text-align: right;
+    text-transform: uppercase;
+    margin-top: 420px;
+    margin-left: 350px;
+    margin-right: -170px;
+  }
+  
+  .parrafo-tips3 {
+    font-family: Lovelace-Italic-Bold;
+    font-size: 17px;
+    text-align: right;
+    margin-top: 15px;
+    margin-right: -170px;
+    margin-left: 300px;
+  }
+  
+  .imagen-tips4 {
+    height: auto;
+    width: auto;
+    max-height: 450px;
+    max-width: 450px;
+    margin-top: 150px;
+    margin-left: 200px;
+  }
+  
+  /* Tip 3 */
+  /* Fin Tips */

@@ -1,0 +1,7 @@
+@mixin imgPromo($altura, $ancho, $alturamax, $anchomax, $margenarriba) {
+    height: $altura;
+    width: $ancho;
+    max-height: $alturamax;
+    max-width: $anchomax;
+    margin-top: $margenarriba;
+}
