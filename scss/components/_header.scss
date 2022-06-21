@@ -42,21 +42,18 @@ nav {
       margin-left: -10px;
       padding: 7px 10px;
       text-decoration: none;
-      font-size: 10px;
+      font-size: 12px;
       font-weight: bold;
       display: block;
       color: nth($colores, 3);
     }
   }
-  
-  
   .enlace-nav {
     display: flex;
     list-style: none;
     margin-right: 0.31rem;
     margin-left: -0.31rem;
   }
-  
   .redes-nav-ig {
     display: flex;
     justify-content: center;
@@ -64,7 +61,6 @@ nav {
     margin-left: 3.12rem;
     height: fit-content;
   }
-  
   .redes-nav-wp {
     display: flex;
     justify-content: center;
@@ -72,5 +68,4 @@ nav {
     margin-left: -70px;
     height: fit-content;
   }
-  
   /* Fin Nav */
