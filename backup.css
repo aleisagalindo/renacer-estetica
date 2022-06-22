@@ -871,314 +871,929 @@ height: 10%;
 
 /* Fin Vista Mobile */
 
-/* Inicio  @media queries */
+  /* Inicio  @media queries */
 
-@media screen and (max-width: 575.98px) {
+  @media screen and (max-width: 575.98px) {
   
-nav {
-  display: none;
-}
-
-.nav-mobile {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 15px;
-  padding: none;
-}
-
-.nav-mobile ul {
-  display: flex;
-  justify-content: space-between;
-}
-
-.logo-nav-mobile {
-  font-family: Lovelace-Italic-Bold;
-  color: #5d4b2b;
-  font-size: 35px;
-  font-weight: 800;
-  display: flex;
-  justify-content: start;
-  margin-left: 1rem;
-}
-
- .icono-info-mb {
-  display: flex;
-  width: 80%;
-  height: auto;
-  max-width: 2.5rem;
-  min-width: 1.875rem;
-  margin-top: 2.81rem;
-  margin-left: 4.18rem;
-  padding: auto;
-  }
-
-  .icono-tips-mb {
-    display: flex;
-    width: 80%;
-    height: auto;
-    max-width: 2.5rem;
-    min-width: 1.875rem;
-    margin-top: 2.62rem;
-    margin-right: 1rem;
-    margin-left: 1rem;
-    padding: auto;
-  }
-
-  .icono-turnos-mb {
-    display: flex;
-    width: 80%;
-    height: auto;
-    max-width: 2.5rem;
-    min-width: 1.875rem;
-    margin-top: 2.72rem;
-    margin-right: 8rem;
-    padding: auto;
-
-
-  }
-
-  .carrusel-mobile {
-    display: flex;
-  }
-
-  .frase-imagen1, .frase-imagen3, .carrusel1, .carrusel2,.carrusel3 {
-    display: none;
-  }
-
-  .carrusel3 {
-    display: none;
-  }
-
-  .carrusel1mb {
-    max-width: fit-content;
-  }
-
-.titulo-principal-promo {
-  display: flex;
-  text-align: center;
-  font-size: 40px;
-  margin: auto;
-  padding-top: auto;
-}
-
-  .contenedor-promociones {
-  
-    grid-template-areas: "columna1"
-                         "columna2"
-                         "columna3";
-    row-gap: -300px;
-    margin-left: -1.25rem;
-    padding: none;
-    background-color: rgb(233, 217, 196);
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    row-gap: 50px;
-}
-
-.imagen-promo1, .imagen-promo2, .imagen-promo3 {
-  height: auto;
-  width: 18.75rem;
-  max-height: 18.75rem;
-  max-width: 18.75rem;
-  margin: auto;
-  padding: auto;
-  grid-area: imagen-promo1;
-}
-
-
-.texto-promo1, 
-.texto-promo2, 
-.texto-promo3,
-.nombre-promo,
-.btn-precio{
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin: 1.25rem 0.62rem;
-  padding: auto;
-}
-
-.contenedor-nosotros {
-  display: none;
-}
-
-.titulo-principal-nosotros {
-  display: none;
-}
-
-.container-nosotros-mb {
-  display: flex;
-  margin-top: 1.25rem;
-}
-
-.titulo-principal-nosotros-mb {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin: auto;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  color: black;
-  font-size: 40px;
-  font-family: Lovelace-Italic-Bold;
-  font-style: oblique;
-  font-weight: lighter;
-}
-.parrafo-nosotros-mb {
-  display: flex;
-  text-align: center;
-  margin-top: 0.5rem;
-  font-family: Lovelace-Italic-Bold;
-  font-size: 18px;
-  padding: 25px;
-}
-
-.contenedor-tips-mb {
-  display: grid;
-  grid-template-areas: "columna1"
-                       "columna2"
-                       "columna3";
+    nav {
+      display: none;
+    }
     
-    margin-left: -1.25rem;
-    padding: none;
-    background-color: rgb(233, 217, 196);
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    row-gap: 50px;
-}
-
-.imagen-tips1, .imagen-tips2, .imagen-tips3 {
-  position: relative;
-  display:grid;
-  height: auto;
-  width: 18.75rem;
-  max-height: 18.75rem;
-  max-width: 18.75rem;
-  margin: auto;
-  padding: auto;
-}
-
-
-.titulo-principal-tips {
-  display: none;
-}
-
-.subtitulo-principal-tips{
-  display: none;
-}
-
-.titulo-principal-tips-mb {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin: auto;
-  padding-top: 5rem;
-  padding-bottom: 2rem;
-  color: black;
-  font-size: 40px;
-  font-family: Lovelace-Italic-Bold;
-  font-style: oblique;
-  font-weight: lighter;
-}
-
-.subtitulo-tips-mb {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin: 50px 25px;
-  padding-bottom: 45px;
-  font-size: 25px;
-  font-family: Lovelace-Italic-Bold;
-  font-style: oblique;
-  font-weight: lighter;
-  color: #5d4b2b;
-}
-
-.nombre-tip-mb {
-  font-family: Lovelace-Italic-Bold;
-  font-size: 20px;
-  font-weight: 800;
-  font-style: bold;
-  text-align: center;
-  text-transform: uppercase;
-  padding-top: 15px;
-  margin: 1.25rem 0.62rem;
-}
-
-.texto-tip-mb {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin: 1.25rem 0.62rem;
-  padding: auto;
-  font-family: Lovelace-Italic-Bold;
-}
-
-.contenedor-tips1, .contenedor-tips2, .contenedor-tips3 {
-  display: none;
-}
-
-.contenedor-inspo {
-  display: none;
-}
-
-
-.pie-de-pagina {
-  display: none;
-}
-
-.pie-de-pagina-mb {
-  background: rgb(187, 168, 142);
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding: auto;
-}
-
-
-.pie-de-pagina-mb div a {
-  display: flex;
-  justify-content: space-around;
-}
-
-.pie-de-pagina-mb div {
-  text-align: center;
-}
-
-.contactanos-mb {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  grid-area: contactanos-mb;
-  margin: auto;
-}
-
-.ig-footer-mb {
-  margin-top: 45px;
-  padding: auto;
-  width: 100%;
-  max-width: 2.25rem;
-  display: flex;
-  grid-area: ig-footer-mb;
-}
-
-.wp-footer-mb {
-  width: 10%;
-  max-width: 1.25rem;
-  display: flex;
-}
-
-.derechos {
-
-  margin-top: 200px;
-  text-align: center;
-}
-
-.parrafo-turnos {
-  font-size: 18px;
-}
-
-}
-/* Fin @media queries */
+    .nav-mobile {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 15px;
+      padding: none;
+    }
+    
+    .nav-mobile ul {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .logo-nav-mobile {
+      font-family: Lovelace-Italic-Bold;
+      color: #5d4b2b;
+      font-size: 35px;
+      font-weight: 800;
+      display: flex;
+      justify-content: start;
+      margin-left: 1rem;
+    }
+    
+     .icono-info-mb {
+      display: flex;
+      width: 80%;
+      height: auto;
+      max-width: 2.5rem;
+      min-width: 1.875rem;
+      margin-top: 2.81rem;
+      margin-left: 4.18rem;
+      padding: auto;
+      }
+    
+      .icono-tips-mb {
+        display: flex;
+        width: 80%;
+        height: auto;
+        max-width: 2.5rem;
+        min-width: 1.875rem;
+        margin-top: 2.62rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        padding: auto;
+      }
+    
+      .icono-turnos-mb {
+        display: flex;
+        width: 80%;
+        height: auto;
+        max-width: 2.5rem;
+        min-width: 1.875rem;
+        margin-top: 2.72rem;
+        margin-right: 8rem;
+        padding: auto;
+    
+    
+      }
+    
+      .carrusel-mobile {
+        display: flex;
+      }
+    
+      .frase-imagen1, .frase-imagen3, .carrusel1, .carrusel2,.carrusel3 {
+        display: none;
+      }
+    
+      .carrusel3 {
+        display: none;
+      }
+    
+      .carrusel1mb {
+        max-width: fit-content;
+      }
+    
+    .titulo-principal-promo {
+      display: flex;
+      text-align: center;
+      font-size: 40px;
+      margin: auto;
+      padding-top: auto;
+    }
+    
+      .contenedor-promociones {
+      
+        grid-template-areas: "columna1"
+                             "columna2"
+                             "columna3";
+        row-gap: -300px;
+        margin-left: -1.25rem;
+        padding: none;
+        background-color: rgb(233, 217, 196);
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        row-gap: 50px;
+    }
+    
+    .imagen-promo1, .imagen-promo2, .imagen-promo3 {
+      height: auto;
+      width: 18.75rem;
+      max-height: 18.75rem;
+      max-width: 18.75rem;
+      margin: auto;
+      padding: auto;
+      grid-area: imagen-promo1;
+    }
+    
+    
+    .texto-promo1, 
+    .texto-promo2, 
+    .texto-promo3,
+    .nombre-promo,
+    .btn-precio{
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin: 1.25rem 0.62rem;
+      padding: auto;
+    }
+    
+    .contenedor-nosotros {
+      display: none;
+    }
+    
+    .titulo-principal-nosotros {
+      display: none;
+    }
+    
+    .container-nosotros-mb {
+      display: flex;
+      margin-top: 1.25rem;
+    }
+    
+    .titulo-principal-nosotros-mb {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin: auto;
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+      color: black;
+      font-size: 40px;
+      font-family: Lovelace-Italic-Bold;
+      font-style: oblique;
+      font-weight: lighter;
+    }
+    .parrafo-nosotros-mb {
+      display: flex;
+      text-align: center;
+      margin-top: 0.5rem;
+      font-family: Lovelace-Italic-Bold;
+      font-size: 18px;
+      padding: 25px;
+    }
+    
+    .contenedor-tips-mb {
+      display: grid;
+      grid-template-areas: "columna1"
+                           "columna2"
+                           "columna3";
+        
+        margin-left: -1.25rem;
+        padding: none;
+        background-color: rgb(233, 217, 196);
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        row-gap: 50px;
+    }
+    
+    .imagen-tips1, .imagen-tips2, .imagen-tips3 {
+      position: relative;
+      display:grid;
+      height: auto;
+      width: 18.75rem;
+      max-height: 18.75rem;
+      max-width: 18.75rem;
+      margin: auto;
+      padding: auto;
+    }
+    
+    
+    .titulo-principal-tips {
+      display: none;
+    }
+    
+    .subtitulo-principal-tips{
+      display: none;
+    }
+    
+    .titulo-principal-tips-mb {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin: auto;
+      padding-top: 5rem;
+      padding-bottom: 2rem;
+      color: black;
+      font-size: 40px;
+      font-family: Lovelace-Italic-Bold;
+      font-style: oblique;
+      font-weight: lighter;
+    }
+    
+    .subtitulo-tips-mb {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin: 50px 25px;
+      padding-bottom: 45px;
+      font-size: 25px;
+      font-family: Lovelace-Italic-Bold;
+      font-style: oblique;
+      font-weight: lighter;
+      color: #5d4b2b;
+    }
+    
+    .nombre-tip-mb {
+      font-family: Lovelace-Italic-Bold;
+      font-size: 20px;
+      font-weight: 800;
+      font-style: bold;
+      text-align: center;
+      text-transform: uppercase;
+      padding-top: 15px;
+      margin: 1.25rem 0.62rem;
+    }
+    
+    .texto-tip-mb {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin: 1.25rem 0.62rem;
+      padding: auto;
+      font-family: Lovelace-Italic-Bold;
+    }
+    
+    .contenedor-tips1, .contenedor-tips2, .contenedor-tips3 {
+      display: none;
+    }
+    
+    .contenedor-inspo {
+      display: none;
+    }
+    
+    
+    .pie-de-pagina {
+      display: none;
+    }
+    
+    .pie-de-pagina-mb {
+      background: rgb(187, 168, 142);
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      padding: auto;
+    }
+    
+    
+    .pie-de-pagina-mb div a {
+      display: flex;
+      justify-content: space-around;
+    }
+    
+    .pie-de-pagina-mb div {
+      text-align: center;
+    }
+    
+    .contactanos-mb {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      grid-area: contactanos-mb;
+      margin: auto;
+    }
+    
+    .ig-footer-mb {
+      margin-top: 45px;
+      padding: auto;
+      width: 100%;
+      max-width: 2.25rem;
+      display: flex;
+      grid-area: ig-footer-mb;
+    }
+    
+    .wp-footer-mb {
+      width: 10%;
+      max-width: 1.25rem;
+      display: flex;
+    }
+    
+    .derechos {
+    
+      margin-top: 200px;
+      text-align: center;
+    }
+    
+    .parrafo-turnos {
+      font-size: 18px;
+    }
+    
+    }
+  
+    @media (max-width: 767.98px) { 
+      nav {
+        display: none;
+      }
+      
+      .nav-mobile {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 15px;
+        padding: none;
+      }
+      
+      .nav-mobile ul {
+        display: flex;
+        justify-content: space-between;
+      }
+      
+      .logo-nav-mobile {
+        font-family: Lovelace-Italic-Bold;
+        color: #5d4b2b;
+        font-size: 35px;
+        font-weight: 800;
+        display: flex;
+        justify-content: start;
+        margin-left: 1rem;
+      }
+      
+       .icono-info-mb {
+        display: flex;
+        width: 80%;
+        height: auto;
+        max-width: 2.5rem;
+        min-width: 1.875rem;
+        margin-top: 2.81rem;
+        margin-left: 4.18rem;
+        padding: auto;
+        }
+      
+        .icono-tips-mb {
+          display: flex;
+          width: 80%;
+          height: auto;
+          max-width: 2.5rem;
+          min-width: 1.875rem;
+          margin-top: 2.62rem;
+          margin-right: 1rem;
+          margin-left: 1rem;
+          padding: auto;
+        }
+      
+        .icono-turnos-mb {
+          display: flex;
+          width: 80%;
+          height: auto;
+          max-width: 2.5rem;
+          min-width: 1.875rem;
+          margin-top: 2.72rem;
+          margin-right: 8rem;
+          padding: auto;
+      
+      
+        }
+      
+        .carrusel-mobile {
+          display: flex;
+        }
+      
+        .frase-imagen1, .frase-imagen3, .carrusel1, .carrusel2,.carrusel3 {
+          display: none;
+        }
+      
+        .carrusel3 {
+          display: none;
+        }
+      
+        .carrusel1mb {
+          max-width: fit-content;
+        }
+      
+      .titulo-principal-promo {
+        display: flex;
+        text-align: center;
+        font-size: 40px;
+        margin: auto;
+        padding-top: auto;
+      }
+      
+        .contenedor-promociones {
+        
+          grid-template-areas: "columna1"
+                               "columna2"
+                               "columna3";
+          row-gap: -300px;
+          margin-left: -1.25rem;
+          padding: none;
+          background-color: rgb(233, 217, 196);
+          align-items: center;
+          justify-content: center;
+          margin: auto;
+          row-gap: 50px;
+      }
+      
+      .imagen-promo1, .imagen-promo2, .imagen-promo3 {
+        height: auto;
+        width: 18.75rem;
+        max-height: 18.75rem;
+        max-width: 18.75rem;
+        margin: auto;
+        padding: auto;
+        grid-area: imagen-promo1;
+      }
+      
+      
+      .texto-promo1, 
+      .texto-promo2, 
+      .texto-promo3,
+      .nombre-promo,
+      .btn-precio{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 1.25rem 0.62rem;
+        padding: auto;
+      }
+      
+      .contenedor-nosotros {
+        display: none;
+      }
+      
+      .titulo-principal-nosotros {
+        display: none;
+      }
+      
+      .container-nosotros-mb {
+        display: flex;
+        margin-top: 1.25rem;
+      }
+      
+      .titulo-principal-nosotros-mb {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        color: black;
+        font-size: 40px;
+        font-family: Lovelace-Italic-Bold;
+        font-style: oblique;
+        font-weight: lighter;
+      }
+      .parrafo-nosotros-mb {
+        display: flex;
+        text-align: center;
+        margin-top: 0.5rem;
+        font-family: Lovelace-Italic-Bold;
+        font-size: 18px;
+        padding: 25px;
+      }
+      
+      .contenedor-tips-mb {
+        display: grid;
+        grid-template-areas: "columna1"
+                             "columna2"
+                             "columna3";
+          
+          margin-left: -1.25rem;
+          padding: none;
+          background-color: rgb(233, 217, 196);
+          align-items: center;
+          justify-content: center;
+          margin: auto;
+          row-gap: 50px;
+      }
+      
+      .imagen-tips1, .imagen-tips2, .imagen-tips3 {
+        position: relative;
+        display:grid;
+        height: auto;
+        width: 18.75rem;
+        max-height: 18.75rem;
+        max-width: 18.75rem;
+        margin: auto;
+        padding: auto;
+      }
+      
+      
+      .titulo-principal-tips {
+        display: none;
+      }
+      
+      .subtitulo-principal-tips{
+        display: none;
+      }
+      
+      .titulo-principal-tips-mb {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+        color: black;
+        font-size: 40px;
+        font-family: Lovelace-Italic-Bold;
+        font-style: oblique;
+        font-weight: lighter;
+      }
+      
+      .subtitulo-tips-mb {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 50px 25px;
+        padding-bottom: 45px;
+        font-size: 25px;
+        font-family: Lovelace-Italic-Bold;
+        font-style: oblique;
+        font-weight: lighter;
+        color: #5d4b2b;
+      }
+      
+      .nombre-tip-mb {
+        font-family: Lovelace-Italic-Bold;
+        font-size: 20px;
+        font-weight: 800;
+        font-style: bold;
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 15px;
+        margin: 1.25rem 0.62rem;
+      }
+      
+      .texto-tip-mb {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 1.25rem 0.62rem;
+        padding: auto;
+        font-family: Lovelace-Italic-Bold;
+      }
+      
+      .contenedor-tips1, .contenedor-tips2, .contenedor-tips3 {
+        display: none;
+      }
+      
+      .contenedor-inspo {
+        display: none;
+      }
+      
+      
+      .pie-de-pagina {
+        display: none;
+      }
+      
+      .pie-de-pagina-mb {
+        background: rgb(187, 168, 142);
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: auto;
+      }
+      
+      
+      .pie-de-pagina-mb div a {
+        display: flex;
+        justify-content: space-around;
+      }
+      
+      .pie-de-pagina-mb div {
+        text-align: center;
+      }
+      
+      .contactanos-mb {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        grid-area: contactanos-mb;
+        margin: auto;
+      }
+      
+      .ig-footer-mb {
+        margin-top: 45px;
+        padding: auto;
+        width: 100%;
+        max-width: 2.25rem;
+        display: flex;
+        grid-area: ig-footer-mb;
+      }
+      
+      .wp-footer-mb {
+        width: 10%;
+        max-width: 1.25rem;
+        display: flex;
+      }
+      
+      .derechos {
+      
+        margin-top: 200px;
+        text-align: center;
+      }
+      
+      .parrafo-turnos {
+        font-size: 18px;
+      }
+     }
+  
+     @media (max-width: 991.98px) { 
+      nav {
+        display: none;
+      }
+      
+      .nav-mobile {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 15px;
+        padding: none;
+      }
+      
+      .nav-mobile ul {
+        display: flex;
+        justify-content: space-between;
+      }
+      
+      .logo-nav-mobile {
+        font-family: Lovelace-Italic-Bold;
+        color: #5d4b2b;
+        font-size: 35px;
+        font-weight: 800;
+        display: flex;
+        justify-content: start;
+        margin-left: 1rem;
+      }
+      
+       .icono-info-mb {
+        display: flex;
+        width: 80%;
+        height: auto;
+        max-width: 2.5rem;
+        min-width: 1.875rem;
+        margin-top: 2.81rem;
+        margin-left: 4.18rem;
+        padding: auto;
+        }
+      
+        .icono-tips-mb {
+          display: flex;
+          width: 80%;
+          height: auto;
+          max-width: 2.5rem;
+          min-width: 1.875rem;
+          margin-top: 2.62rem;
+          margin-right: 1rem;
+          margin-left: 1rem;
+          padding: auto;
+        }
+      
+        .icono-turnos-mb {
+          display: flex;
+          width: 80%;
+          height: auto;
+          max-width: 2.5rem;
+          min-width: 1.875rem;
+          margin-top: 2.72rem;
+          margin-right: 8rem;
+          padding: auto;
+      
+      
+        }
+      
+        .carrusel-mobile {
+          display: flex;
+        }
+      
+        .frase-imagen1, .frase-imagen3, .carrusel1, .carrusel2,.carrusel3 {
+          display: none;
+        }
+      
+        .carrusel3 {
+          display: none;
+        }
+      
+        .carrusel1mb {
+          max-width: fit-content;
+        }
+      
+      .titulo-principal-promo {
+        display: flex;
+        text-align: center;
+        font-size: 40px;
+        margin: auto;
+        padding-top: auto;
+      }
+      
+        .contenedor-promociones {
+        
+          grid-template-areas: "columna1"
+                               "columna2"
+                               "columna3";
+          row-gap: -300px;
+          margin-left: -1.25rem;
+          padding: none;
+          background-color: rgb(233, 217, 196);
+          align-items: center;
+          justify-content: center;
+          margin: auto;
+          row-gap: 50px;
+      }
+      
+      .imagen-promo1, .imagen-promo2, .imagen-promo3 {
+        height: auto;
+        width: 18.75rem;
+        max-height: 18.75rem;
+        max-width: 18.75rem;
+        margin: auto;
+        padding: auto;
+        grid-area: imagen-promo1;
+      }
+      
+      
+      .texto-promo1, 
+      .texto-promo2, 
+      .texto-promo3,
+      .nombre-promo,
+      .btn-precio{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 1.25rem 0.62rem;
+        padding: auto;
+      }
+      
+      .contenedor-nosotros {
+        display: none;
+      }
+      
+      .titulo-principal-nosotros {
+        display: none;
+      }
+      
+      .container-nosotros-mb {
+        display: flex;
+        margin-top: 1.25rem;
+      }
+      
+      .titulo-principal-nosotros-mb {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        color: black;
+        font-size: 40px;
+        font-family: Lovelace-Italic-Bold;
+        font-style: oblique;
+        font-weight: lighter;
+      }
+      .parrafo-nosotros-mb {
+        display: flex;
+        text-align: center;
+        margin-top: 0.5rem;
+        font-family: Lovelace-Italic-Bold;
+        font-size: 18px;
+        padding: 25px;
+      }
+      
+      .contenedor-tips-mb {
+        display: grid;
+        grid-template-areas: "columna1"
+                             "columna2"
+                             "columna3";
+          
+          margin-left: -1.25rem;
+          padding: none;
+          background-color: rgb(233, 217, 196);
+          align-items: center;
+          justify-content: center;
+          margin: auto;
+          row-gap: 50px;
+      }
+      
+      .imagen-tips1, .imagen-tips2, .imagen-tips3 {
+        position: relative;
+        display:grid;
+        height: auto;
+        width: 18.75rem;
+        max-height: 18.75rem;
+        max-width: 18.75rem;
+        margin: auto;
+        padding: auto;
+      }
+      
+      
+      .titulo-principal-tips {
+        display: none;
+      }
+      
+      .subtitulo-principal-tips{
+        display: none;
+      }
+      
+      .titulo-principal-tips-mb {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+        color: black;
+        font-size: 40px;
+        font-family: Lovelace-Italic-Bold;
+        font-style: oblique;
+        font-weight: lighter;
+      }
+      
+      .subtitulo-tips-mb {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 50px 25px;
+        padding-bottom: 45px;
+        font-size: 25px;
+        font-family: Lovelace-Italic-Bold;
+        font-style: oblique;
+        font-weight: lighter;
+        color: #5d4b2b;
+      }
+      
+      .nombre-tip-mb {
+        font-family: Lovelace-Italic-Bold;
+        font-size: 20px;
+        font-weight: 800;
+        font-style: bold;
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 15px;
+        margin: 1.25rem 0.62rem;
+      }
+      
+      .texto-tip-mb {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 1.25rem 0.62rem;
+        padding: auto;
+        font-family: Lovelace-Italic-Bold;
+      }
+      
+      .contenedor-tips1, .contenedor-tips2, .contenedor-tips3 {
+        display: none;
+      }
+      
+      .contenedor-inspo {
+        display: none;
+      }
+      
+      
+      .pie-de-pagina {
+        display: none;
+      }
+      
+      .pie-de-pagina-mb {
+        background: rgb(187, 168, 142);
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: auto;
+      }
+      
+      
+      .pie-de-pagina-mb div a {
+        display: flex;
+        justify-content: space-around;
+      }
+      
+      .pie-de-pagina-mb div {
+        text-align: center;
+      }
+      
+      .contactanos-mb {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        grid-area: contactanos-mb;
+        margin: auto;
+      }
+      
+      .ig-footer-mb {
+        margin-top: 45px;
+        padding: auto;
+        width: 100%;
+        max-width: 2.25rem;
+        display: flex;
+        grid-area: ig-footer-mb;
+      }
+      
+      .wp-footer-mb {
+        width: 10%;
+        max-width: 1.25rem;
+        display: flex;
+      }
+      
+      .derechos {
+      
+        margin-top: 200px;
+        text-align: center;
+      }
+      
+      .parrafo-turnos {
+        font-size: 18px;
+      }
+      }
+  
+    /* Fin @media queries */
