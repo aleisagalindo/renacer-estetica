@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
 /* Inicio Nav */
 nav {
   background-color: #e9d9c4;
@@ -13,13 +13,15 @@ nav {
 
 .logo-nav {
   text-align: center;
-  font-family: Lovelace-Italic-Bold;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  font-style: normal;
   color: #5d4b2b;
-  font-size: 35px;
+  font-size: 30px;
   margin-left: 12.5rem;
   margin-right: 21.875rem;
   padding: 0 1.87rem;
-  font-weight: bold;
+  
   display: flex; }
 
 .menu-nav {
@@ -114,24 +116,25 @@ nav {
 
 .frase-imagen1 {
   color: #5d4b2b;
-  font-family: Lovelace-Italic-Bold;
+  font-family: 'Playfair Display', serif;
+  font-weight: 300;
   position: absolute;
-  top: 150px;
-  right: 1005px;
+  top: 9.37rem;
+  right: 61.875rem;
   font-size: 22px; }
 
 .frase-imagen3 {
   color: #5d4b2b;
   position: absolute;
-  top: 100px;
-  right: -300px;
+  top: 6.25rem;
+  right: -18.75rem;
   margin-top: 100px;
-  margin-bottom: -500px;
-  margin-right: 450px;
-  margin-left: 800px;
+  margin-bottom: -31.25rem;
+  margin-right: 28.12rem;
+  margin-left: 50rem;
   text-align: end;
   font-size: 50px;
-  font-family: Lovelace-Italic-Bold;
+  font-family: 'Playfair Display', serif;
   text-transform: inherit; }
 
 /* Fin Contenido Principal */
@@ -171,7 +174,7 @@ nav {
   margin-bottom: -179px;
   margin-right: -30px;
   margin-left: 31.25rem;
-  font-family: Lovelace-Italic-Bold;
+  font-family: 'Playfair Display', serif;
   font-size: 55px;
   color: black;
   font-style: oblique;
@@ -212,8 +215,8 @@ nav {
     margin-right: 20px;
   }*/
 .nombre-promo {
-  font-family: Montserrat-SemiBold;
-  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
   font-size: 16px;
   display: grid;
   justify-content: start;
@@ -223,7 +226,7 @@ nav {
   grid-area: nombre-promo; }
 
 .texto-promo1 {
-  font-family: Montserrat-Regular;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 15px;
   padding-left: 10px;
@@ -236,7 +239,7 @@ nav {
   grid-area: texto-promo; }
 
 .texto-promo2 {
-  font-family: Montserrat-Regular;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 15px;
   padding-left: 10px;
@@ -249,7 +252,7 @@ nav {
   grid-area: texto-promo; }
 
 .texto-promo3 {
-  font-family: Montserrat-Regular;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 15px;
   padding-left: 10px;
@@ -294,8 +297,8 @@ nav {
   margin-bottom: -180px;
   margin-right: -30px;
   margin-left: 500px;
-  font-family: Lovelace-Italic-Bold;
-  font-size: 55px;
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
   color: black;
   font-style: oblique;
   font-weight: lighter; }
@@ -328,10 +331,10 @@ nav {
 
 .titulo-nosotros1 {
   color: #5d4b2b;
-  font-family: Lovelace-Italic-Bold;
-  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   text-align: left;
   text-transform: uppercase;
   margin-top: 200px;
@@ -339,7 +342,7 @@ nav {
   margin-right: 120px; }
 
 .parrafo-nosotros1 {
-  font-family: Lovelace-Italic-Bold;
+  font-family: 'Playfair Display', serif;
   font-size: 18px;
   text-align: left;
   margin-top: 30px;
@@ -347,7 +350,7 @@ nav {
   margin-left: 50px; }
 
 .parrafo-nosotros2 {
-  font-family: Lovelace-Italic-Bold;
+  font-family: 'Playfair Display', serif;
   font-size: 18px;
   text-align: left;
   margin-top: 15px;
@@ -383,9 +386,9 @@ nav {
 
 .subtitulo-principal-tips {
   color: #5d4b2b;
-  font-family: Lovelace-Italic-Bold;
-  font-weight: inherit;
-  font-size: 26px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 300;
+  font-size: 25px;
   font-style: italic;
   text-align: left;
   position: absolute;
@@ -402,7 +405,7 @@ nav {
   grid-row-gap: 0px; }
 
 .titulo-tips1 {
-  font-family: Lovelace-Italic-Bold;
+  font-family: 'Playfair Display', serif;
   font-size: 25px;
   font-weight: 500;
   font-style: normal;
@@ -413,7 +416,7 @@ nav {
   margin-right: -170px; }
 
 .parrafo-tips1 {
-  font-family: Lovelace-Italic-Bold;
+  font-family: 'Playfair Display', serif;
   font-size: 17px;
   text-align: right;
   margin-top: 15px;
@@ -461,7 +464,7 @@ nav {
   grid-row-gap: 0px; }
 
 .titulo-tips2 {
-  font-family: Lovelace-Italic-Bold;
+  font-family: 'Playfair Display', serif;
   font-size: 25px;
   font-weight: 500;
   font-style: normal;
@@ -472,7 +475,7 @@ nav {
   margin-right: 250px; }
 
 .parrafo-tips2 {
-  font-family: Lovelace-Italic-Bold;
+  font-family: 'Playfair Display', serif;
   font-size: 17px;
   text-align: left;
   margin-top: 15px;
@@ -511,7 +514,7 @@ nav {
   padding: 40px; }
 
 .titulo-tips3 {
-  font-family: Lovelace-Italic-Bold;
+  font-family: 'Playfair Display', serif;
   font-size: 25px;
   font-weight: 500;
   font-style: normal;
@@ -522,7 +525,7 @@ nav {
   margin-right: -170px; }
 
 .parrafo-tips3 {
-  font-family: Lovelace-Italic-Bold;
+  font-family: 'Playfair Display', serif;
   font-size: 17px;
   text-align: right;
   margin-top: 15px;
@@ -582,14 +585,14 @@ nav {
     width: 250px;
   }
   .pie-pagina .grup-1 .box h2 {
-    font-family: 'Merriweather', serif;
+    font-family: 'Playfair Display', serif;
     font-style: normal;
-    font-weight: 700;
+    font-weight: bold;
     color: #3d321d;
     font-size: 20px;
   }
   .pie-pagina .grup-1 .box p {
-    font-family: 'Merriweather', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 15px;
     color: #3d321d;
     margin-bottom: 10px;
@@ -638,7 +641,7 @@ nav {
     justify-content: center;
     text-align: center;
     font-size: 25px;
-    font-family: Lovelace-Italic-Bold;
+    font-family: 'Playfair Display', serif;
     color: black;
     padding: 100px; }
   .container-turnos a {
@@ -726,7 +729,7 @@ body {
       }
       
       .logo-nav-mobile {
-        font-family: Lovelace-Italic-Bold;
+        font-family: 'Playfair Display', serif;
         color: #5d4b2b;
         font-size: 35px;
         font-weight: 800;
@@ -853,7 +856,7 @@ body {
         padding-bottom: 5rem;
         color: black;
         font-size: 40px;
-        font-family: Lovelace-Italic-Bold;
+        font-family: 'Playfair Display', serif;
         font-style: oblique;
         font-weight: lighter;
       }
@@ -861,7 +864,7 @@ body {
         display: flex;
         text-align: center;
         margin-top: 0.5rem;
-        font-family: Lovelace-Italic-Bold;
+        font-family: 'Playfair Display', serif;
         font-size: 18px;
         padding: 25px;
       }
@@ -910,7 +913,7 @@ body {
         padding-bottom: 2rem;
         color: black;
         font-size: 40px;
-        font-family: Lovelace-Italic-Bold;
+        font-family: 'Playfair Display', serif;
         font-style: oblique;
         font-weight: lighter;
       }
@@ -922,14 +925,14 @@ body {
         margin: 50px 25px;
         padding-bottom: 45px;
         font-size: 25px;
-        font-family: Lovelace-Italic-Bold;
+        font-family: 'Playfair Display', serif;
         font-style: oblique;
         font-weight: lighter;
         color: #5d4b2b;
       }
       
       .nombre-tip-mb {
-        font-family: Lovelace-Italic-Bold;
+        font-family: 'Playfair Display', serif;
         font-size: 20px;
         font-weight: 800;
         font-style: bold;
@@ -945,7 +948,7 @@ body {
         text-align: center;
         margin: 1.25rem 0.62rem;
         padding: auto;
-        font-family: Lovelace-Italic-Bold;
+        font-family: 'Playfair Display', serif;
       }
       
       .contenedor-tips1, .contenedor-tips2, .contenedor-tips3 {
@@ -980,7 +983,7 @@ body {
         }
         
         .logo-nav-mobile {
-          font-family: Lovelace-Italic-Bold;
+          font-family: 'Playfair Display', serif;
           color: #5d4b2b;
           font-size: 35px;
           font-weight: 800;
@@ -1107,7 +1110,7 @@ body {
           padding-bottom: 5rem;
           color: black;
           font-size: 40px;
-          font-family: Lovelace-Italic-Bold;
+          font-family: 'Playfair Display', serif;
           font-style: oblique;
           font-weight: lighter;
         }
@@ -1115,7 +1118,7 @@ body {
           display: flex;
           text-align: center;
           margin-top: 0.5rem;
-          font-family: Lovelace-Italic-Bold;
+          font-family: 'Playfair Display', serif;
           font-size: 18px;
           padding: 25px;
         }
@@ -1164,7 +1167,7 @@ body {
           padding-bottom: 2rem;
           color: black;
           font-size: 40px;
-          font-family: Lovelace-Italic-Bold;
+          font-family: 'Playfair Display', serif;
           font-style: oblique;
           font-weight: lighter;
         }
@@ -1176,14 +1179,14 @@ body {
           margin: 50px 25px;
           padding-bottom: 45px;
           font-size: 25px;
-          font-family: Lovelace-Italic-Bold;
+          font-family: 'Playfair Display', serif;
           font-style: oblique;
           font-weight: lighter;
           color: #5d4b2b;
         }
         
         .nombre-tip-mb {
-          font-family: Lovelace-Italic-Bold;
+          font-family: 'Playfair Display', serif;
           font-size: 20px;
           font-weight: 800;
           font-style: bold;
@@ -1199,7 +1202,7 @@ body {
           text-align: center;
           margin: 1.25rem 0.62rem;
           padding: auto;
-          font-family: Lovelace-Italic-Bold;
+          font-family: 'Playfair Display', serif;
         }
         
         .contenedor-tips1, .contenedor-tips2, .contenedor-tips3 {
@@ -1240,7 +1243,7 @@ body {
         }
         
         .logo-nav-mobile {
-          font-family: Lovelace-Italic-Bold;
+          font-family: 'Playfair Display', serif;
           color: #5d4b2b;
           font-size: 35px;
           font-weight: 800;
@@ -1367,7 +1370,7 @@ body {
           padding-bottom: 5rem;
           color: black;
           font-size: 40px;
-          font-family: Lovelace-Italic-Bold;
+          font-family: 'Playfair Display', serif;
           font-style: oblique;
           font-weight: lighter;
         }
@@ -1375,7 +1378,7 @@ body {
           display: flex;
           text-align: center;
           margin-top: 0.5rem;
-          font-family: Lovelace-Italic-Bold;
+          font-family: 'Playfair Display', serif;
           font-size: 18px;
           padding: 25px;
         }
@@ -1424,7 +1427,7 @@ body {
           padding-bottom: 2rem;
           color: black;
           font-size: 40px;
-          font-family: Lovelace-Italic-Bold;
+          font-family: 'Playfair Display', serif;
           font-style: oblique;
           font-weight: lighter;
         }
@@ -1436,14 +1439,14 @@ body {
           margin: 50px 25px;
           padding-bottom: 45px;
           font-size: 25px;
-          font-family: Lovelace-Italic-Bold;
+          font-family: 'Playfair Display', serif;
           font-style: oblique;
           font-weight: lighter;
           color: #5d4b2b;
         }
         
         .nombre-tip-mb {
-          font-family: Lovelace-Italic-Bold;
+          font-family: 'Playfair Display', serif;
           font-size: 20px;
           font-weight: 800;
           font-style: bold;
@@ -1459,7 +1462,7 @@ body {
           text-align: center;
           margin: 1.25rem 0.62rem;
           padding: auto;
-          font-family: Lovelace-Italic-Bold;
+          font-family: 'Playfair Display', serif;
         }
         
         .contenedor-tips1, .contenedor-tips2, .contenedor-tips3 {
