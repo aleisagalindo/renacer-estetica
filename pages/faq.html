@@ -20,10 +20,10 @@
     <link rel="stylesheet" href="/css/style.css" />
     <title>Renacer Estética / Preguntas Frecuentes </title>
   </head>
-<body>
+<body class="body-faq">
       <!-- Inicio Nav -->
     <header>
-        <nav>
+        <nav class="nav-desktop fixed-top">
           <ul class="menu-nav">
             <li>
                 <a class="enlace-nav" href="../index.html">inicio</a>
@@ -67,32 +67,38 @@
   
   <!-- Inicio Nav Vista Mobile -->
   <header>
-    <nav class="nav-mobile">
-      <label class="logo-nav-mobile">renacer</label>
-      <ul>
-        <li>
-          <a href="../index.html">
-            <img class="icono-turnos-mb" src="/multimedia/icons/home.png" alt="">
-          </a>
-        </li>
-      </ul>
+    <nav class="navbar d-lg-none navbar-light color-nav-mb">
+      <div class="container-fluid">
+        <a class="navbar-brand logo-nav-mobile" href="#">renacer</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active enlace-nav-mb" aria-current="page" href="/index.html">INICIO</a>
+            <a class="nav-link enlace-nav-mb" href="turnos.html">TURNOS</a>
+            <a class="nav-link enlace-nav-mb" href="#">Pricing</a>
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </div>
+        </div>
+      </div>
     </nav>
   </header>
   <!-- Fin Nav Vista Mobile -->
   <!-- Fin Nav -->  
   <!-- Inicio FAQ -->
   <main>
-    <section>
-      <h2 class="titulo-principal-nosotros mt-1 pb-4 mb-5">¿Preguntas?</h2>
-      <div class="accordion mt-1 pt-1" id="accordionPanelsStayOpenExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+    <section class="container-faqs">
+      <h2 class="titulo-principal-faq">¿Preguntas?</h2>
+      <div class="accordion mt-5 pt-5 bg-transparent" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item bg-transparent">
+          <h2 class="accordion-header bg-transparent titulos-faq" id="panelsStayOpen-headingOne">
+            <button class="accordion-button collapsed bg-transparent text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
               ¿Puedo hacer la sesión si estoy indispuesta?
             </button>
           </h2>
-          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
-            <div class="accordion-body">
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse bg-transparent" aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body bg-light titulos-faq">
               <strong>Levante la mano quién alguna vez se preguntó si la menstruación afectaba en el tratamiento🙋🏽‍♀️🙋🏻‍♀️🙋🏼‍♀️</strong> <br>SI SE PUEDE HACER DEPILACIÓN DEFINITIVA DURANTE EL PERIODO<br>
               Lo importante es que sepas que NO va a producir ningún cambio ni problema, es decir que no va a alterar el crecimiento o no del vello.
               SI habrá una mayor sensibilidad en la zona, pero como siempre, va a depender del tipo de piel y de cada cuerpo en particular!
@@ -100,26 +106,26 @@
             </div>
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+        <div class="accordion-item bg-transparent">
+          <h2 class="accordion-header bg-transparent titulos-faq" id="panelsStayOpen-headingTwo">
+            <button class="accordion-button collapsed bg-transparent text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
               ¿Se puede realizar depilación definitiva si tengo tatuajes? 
             </button>
           </h2>
           <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-            <div class="accordion-body">
+            <div class="accordion-body bg-light titulos-faq">
               <strong>Tenés que saber que, si ya tenés algún tatuaje en la zona a tratar, existen ciertos riesgos.</strong><br>La técnica de depilación láser consiste en <I>detectar la melanina</I>, que es lo que aporta color al vello, haciendo más sencillo quemarlo de raíz. El inconveniente es que si deetcta la tinta del tatuaje, como si de melanina se tratara, podría quemar esa parte de la piel, modificando la pigmentación y eliminando parcial o completamente el tatuaje.<br>Aún así, la depilación se puede realizar sobre el resto de la zona, <strong>cubriendo el tatuaje por completo y aplicándolo alrededor del mismo.</strong>  
             </div>
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+        <div class="accordion-item bg-transparent">
+          <h2 class="accordion-header bg-transparent titulos-faq" id="panelsStayOpen-headingThree">
+            <button class="accordion-button collapsed bg-transparent text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
               ¿Cuales son los beneficios al realizar Depilación Definitiva?
             </button>
           </h2>
           <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-            <div class="accordion-body">
+            <div class="accordion-body bg-light titulos-faq">
               <strong>5 RAZONES PARA REALIZARLA:</strong><br><strong>1.</strong> Podés depilarte los 365 días del año.<br><strong>2.</strong> Se elimina el 95% del vello. <br><strong>3.</strong> Ahorrás dinero y tiempo.<br><strong>4.</strong> Mejorás tu pielo produciendo más <I>elastina</I> y <I>colágeno</I>.<br><strong>5.</strong> Elimna la <I>foliculitis</I> (vello encarnado).<br>Entonces...¿Porque someter a nuestra piel a estos maltratos?🤦‍♀️Invertí en Depilación Definitiva Láser y decile chau a la maquinita.
             </div>
           </div>
@@ -127,77 +133,77 @@
       </div>
 
       <div class="accordion" id="accordionPanelsStayOpenExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="panelsStayOpen-headingFour">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true" aria-controls="panelsStayOpen-collapseFour">
+        <div class="accordion-item bg-transparent">
+          <h2 class="accordion-header bg-transparent titulos-faq" id="panelsStayOpen-headingFour">
+            <button class="accordion-button collapsed bg-transparent text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true" aria-controls="panelsStayOpen-collapseFour">
               ¿Cuáles son los errores más frecuentes al realizar el tratamiento?
             </button>
           </h2>
           <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
-            <div class="accordion-body">
+            <div class="accordion-body bg-light titulos-faq">
               <strong>Es cierto que depilarse con la "maquinita" es más rápido y uno de los métodos más usados por nuestras clientas</strong><br>Sin embargo, suele realizarse con muchos errores:<br>▪️Depilarse en seco lo que provoca lastimaduras, enrojecimiento o cortes.<br>▪️No utilizar cremas de exfoliación o geles específicos para hidratar la piel.<br>▪️Una mala Depilación puede llevar a que los vellos se enquisten y posteriormente se infecten.
             </div>
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="panelsStayOpen-headingFive">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+        <div class="accordion-item bg-transparent">
+          <h2 class="accordion-header bg-transparent titulos-faq" id="panelsStayOpen-headingFive">
+            <button class="accordion-button collapsed bg-transparent text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
               Tengo manchas oscuras en las axilas, ¿Sabés cuál es la solución? ¡Depi Láser!
             </button>
           </h2>
           <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
-            <div class="accordion-body">
+            <div class="accordion-body bg-light titulos-faq">
               Las manchas oscuras aparecen por la irritación que provocan las navajas en la piel, además de la acumulación de células muertas y el vello subcutáneo.<br>No esperes más 😉 Luci tu piel
             </div>
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="panelsStayOpen-headingSix">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+        <div class="accordion-item bg-transparent">
+          <h2 class="accordion-header bg-transparent titulos-faq" id="panelsStayOpen-headingSix">
+            <button class="accordion-button collapsed bg-transparent text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
               ¿Es posible la depilación láser sobre vello rubio o pelirrojo?
             </button>
           </h2>
           <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
-            <div class="accordion-body">
+            <div class="accordion-body bg-light titulos-faq">
               El láser actúa sobre el folículo piloso detectándolo gracias a la melamina. Es decir que mientras más oscuro sea el vello y más blanca la piel, mejor captará el folículo la máquina. Pero ésto no quita la efectividad en otros tipos de vello ni de piel.<br>Como mencionamos anteriormente, los resultados dependen tanto del fototipo de piel como del vello y de la compatibilidad que estos tengan con el láser. Por eso es importante que la evaluación la realice un experto como así también el seguimiento posterior.
             </div>
           </div>
         </div>
       </div>
 
-      <div class="accordion pb-5 mb-4" id="accordionPanelsStayOpenExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="true" aria-controls="panelsStayOpen-collapseSeven">
+      <div class="accordion pb-5 mb-1" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item bg-transparent">
+          <h2 class="accordion-header bg-transparent titulos-faq" id="panelsStayOpen-headingSeven">
+            <button class="accordion-button collapsed bg-transparent text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="true" aria-controls="panelsStayOpen-collapseSeven">
               Contraindicaciones para realizar Depilación Láser
             </button>
           </h2>
           <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSeven">
-            <div class="accordion-body">
+            <div class="accordion-body bg-light titulos-faq">
               <strong>Antes de realizar cualquier tratamiento láser tené siempre en cuenta cuáles son las Contraindicaciones para este tratamiento.</strong><br><strong>ENFERMEDADES COMO:</strong><br>Herpes, Diabetes, Epilepcia, Lupus, Tumores Malignos, Psoriasis u otra enfermedad que afecte a la piel.<br>Embarazadas o en período de lactancia.<br>No se puede aplicar por encima de los tatuajes.<br>Personas en tratamiento para el acné, pieles lastimadas, sensibles o verrugas.<br><strong>Es muy importante que antes de asistir nos avises si sufrís de algún problema en tu piel para poder asesorarte de la mejor manera.</strong>
             </div>
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="panelsStayOpen-headingEight">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false" aria-controls="panelsStayOpen-collapseEight">
+        <div class="accordion-item bg-transparent">
+          <h2 class="accordion-header bg-transparent titulos-faq" id="panelsStayOpen-headingEight">
+            <button class="accordion-button collapsed bg-transparent text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false" aria-controls="panelsStayOpen-collapseEight">
               ¿Puedo parar mi tratamiento de Depilación Láser?
             </button>
           </h2>
           <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingEight">
-            <div class="accordion-body">
+            <div class="accordion-body bg-light titulos-faq">
               <strong>Siempre recomendamos que es muy importante la constancia en cualquier tratamiento corporal que realices para poder lograr los mejores resultados.</strong><br>Si haces una pausa en tu tratamiento de Depilación Láser podes llegar a notar algunos cambios y es importante que tengas en cuenta:<br>▪️El vello que eliminamos durante las sesiones no volverá a crecer.<br>▪️ Debido a cambios hormonales podes notar la aparición de nuevos vellos.<br>▪️ Es MUY IMPORTANTE que no utilices pinza, cera ni otro método de arranque de raiz y continues rasurandote con maquina.<br>▪️Mantené la hidratación de tu piel y el cuidado con el sol.
             </div>
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="panelsStayOpen-headingNine">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false" aria-controls="panelsStayOpen-collapseNine">
+        <div class="accordion-item bg-transparent">
+          <h2 class="accordion-header bg-transparent titulos-faq" id="panelsStayOpen-headingNine">
+            <button class="accordion-button collapsed bg-transparent text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false" aria-controls="panelsStayOpen-collapseNine">
               Medios de pago
             </button>
           </h2>
           <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingNine">
-            <div class="accordion-body">
+            <div class="accordion-body bg-light titulos-faq">
               <strong>Efectivo</strong><br><strong>Tarjeta de Crédito o Débito</strong><br><strong>Transferencia Bancaria</strong>
             </div>
           </div>

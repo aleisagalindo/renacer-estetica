@@ -20,10 +20,10 @@
      <!-- CSS -->
     <link rel="stylesheet" href="/css/style.css" />
 </head>
-<body>
+<body class="body-inicio-turnos">
     <!-- Inicio Nav -->
     <header>
-        <nav>
+        <nav class="nav-desktop">
           <ul class="menu-nav">
             <li>
                 <a class="enlace-nav" href="../index.html">inicio</a>
@@ -67,15 +67,21 @@
 
 <!-- Inicio Nav Vista Mobile -->
 <header>
-  <nav class="nav-mobile">
-    <label class="logo-nav-mobile">renacer</label>
-    <ul>
-      <li>
-        <a href="../index.html">
-          <img class="icono-turnos-mb" src="/multimedia/icons/home.png" alt="">
-        </a>
-      </li>
-    </ul>
+  <nav class="navbar d-lg-none navbar-light color-nav-mb">
+    <div class="container-fluid">
+      <a class="navbar-brand logo-nav-mobile" href="#">renacer</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active enlace-nav-mb" aria-current="page" href="/index.html">INICIO</a>
+          <a class="nav-link enlace-nav-mb" href="./faq.html">FAQs</a>
+          <a class="nav-link enlace-nav-mb" href="#">Pricing</a>
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </div>
+      </div>
+    </div>
   </nav>
 </header>
       

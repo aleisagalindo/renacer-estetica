@@ -14,6 +14,8 @@
     <meta property="og:description" content="Aprovechá nuestras promociones"> 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/851501c68f.js" crossorigin="anonymous"></script>
+    <!-- AOS Animaciones -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- CSS -->
@@ -22,11 +24,14 @@
     <title>Renacer Estética / Inicio / Depilación Definitiva Tucumán</title>
     <link rel="icon" href="/multimedia/icons/logo-header.ico">
   </head>
-  <body>
+  <body class="body-inicio-turnos">
 
 <!-- Inicio Nav -->
     <header>
-      <nav>
+      <nav class="nav-desktop" data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-delay="1000"
+      data-aos-offset="0">
         <ul class="menu-nav">
           <li>
             <a class="enlace-nav" href="#nosotros">nosotros</a>
@@ -71,34 +76,28 @@
 
 <!-- Inicio Nav Vista Mobile -->
 <header>
-  <nav class="nav-mobile">
-    <label class="logo-nav-mobile">renacer</label>
-    <ul>
-      <li>
-        <a href="/pages/faq.html">
-          <img class="icono-info-mb" src="/multimedia/icons/info.ico" alt="icono de información">
-        </a>
-      </li>
-      <li>
-        <a href="#tips-mb">
-          <img class="icono-tips-mb" src="/multimedia/icons/lamp.ico" alt="icono de consejos">
-        </a>
-      </li>
-      <li>
-        <a href="/pages/turnos.html">
-          <img class="icono-turnos-mb" src="/multimedia/icons/disponibilidad.ico" alt="icono de turnos">
-        </a>
-      </li>
-    </ul>
+  <nav class="navbar d-lg-none navbar-light fixed-top color-nav-mb">
+    <div class="container-fluid">
+      <a class="navbar-brand logo-nav-mobile" href="#">renacer</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active enlace-nav-mb" aria-current="page" href="#nosotros-mobile">NOSOTROS</a>
+          <a class="nav-link enlace-nav-mb" href="./pages/turnos.html">TURNOS</a>
+          <a class="nav-link enlace-nav-mb" href="./pages/faq.html">FAQs</a>
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </div>
+      </div>
+    </div>
   </nav>
 </header>
-      
 <!-- Fin Nav Vista Mobile -->
-
 <!-- Fin Nav -->
+
 <main>
 <!-- Inicio Contenido Principal -->
-
 <!-- Inicio Carrusel Vista Mobile -->
 <section>
 <div id="carouselExampleFade" class=" .d-none .d-sm-block .d-md-none carousel slide carousel-fade mt-4 mh-100 carrusel-mobile" data-bs-ride="carousel">
@@ -120,8 +119,8 @@
     <div class="contenedor">
       <div class="contenedor-imagenes">
         <div class="div1">
-          <p class="frase-imagen1">self-care</p>
-          <img
+          <p data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1100" class="frase-imagen1">self-care</p>
+          <img data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000"
             loading="lazy"
             class="carrusel1"
             src="/multimedia/images/webp/ojos-hombre-gel.webp"
@@ -129,7 +128,7 @@
           />
         </div>
         <div class="div2">
-          <img
+          <img data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000"
             loading="lazy"
             class="carrusel2"
             src="/multimedia/images/webp/cara-mujer.webp"
@@ -137,10 +136,10 @@
           />
         </div>
         <div class="div3">
-          <p style="font-style: italic" class="frase-imagen3">
+          <p data-aos="fade-left" data-aos-easing="linear" data-aos-duration="800" style="font-style: italic" class="frase-imagen3">
             Sé la energía que quieres atraer
           </p>
-          <img
+          <img data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1000"
             loading="lazy"
             class="carrusel3"
             src="/multimedia/images/webp/textura-piel1.webp"
@@ -161,7 +160,7 @@
             </div>
         <h2 class="nombre-promo">Depilación Masculina n.1</h2>
         <p class="texto-promo1">Barba, Piernas Completas y Pies</p>
-        <a href="turnos.html" class="btn-precio">Ver más  →</a>
+        <a href="./pages/turnos.html" class="btn-precio">Ver más  →</a>
         </div>
         <div class="columna-2">
             <div>
@@ -169,7 +168,7 @@
             </div>
         <h3 class="nombre-promo">Depilación Femenina n.2</h3>
         <p class="texto-promo2">Axilas, Pelvis, Tira de Cola y Piernas Completas</p>
-        <a href="turnos.html" class="btn-precio">Ver más  →</a>
+        <a href="./pages/turnos.html" class="btn-precio">Ver más  →</a>
         </div>
         <div class="columna-3">
             <div>
@@ -177,7 +176,7 @@
             </div>
         <h2 class="nombre-promo">Promo Amigos 3x2</h2>
         <p class="texto-promo3">Piernas completas y Axilas</p>
-        <a href="turnos.html" class="btn-precio">Ver más  →</a>
+        <a href="./pages/turnos.html" class="btn-precio">Ver más  →</a>
         </div>
         <div>
     </section>
@@ -219,8 +218,48 @@
 
 <!-- Fin Nosotros -->
 
-<!-- Inicio Tips -->
+<!-- Inicio Testimonios Mobile -->
+<h3 class="titulo-testimonios-mb d-lg-none d-md-none">Tu opinión nos interesa. <br>Les preguntamos a nuestros clientes por qué nos eligen y lo que más les gusta de Renacer</h3>
+<div id="carouselExampleControls" class="carousel slide d-md-none d-lg-none" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img loading="lazy" src="/multimedia/images/webp/2.webp" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img loading="lazy" src="/multimedia/images/webp/3.webp" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img loading="lazy" src="/multimedia/images/webp/4.webp" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- Fin Testimonios Moible -->
+<!-- Inicio Testimonios -->
+<section class="contenedor-testimonios">
+  <h3 class="titulo-testimonios">Tu opinión nos interesa <br>Les preguntamos a nuestros clientes por qué nos eligen y lo que más les gusta de Renacer</h3>
+  <div class="parentTestimonios">
+    <div class="div1-testimonios">
+      <img src="/multimedia/images/webp/2.webp" alt="">
+    </div>
+    <div class="div2-testimonios">
+      <img src="/multimedia/images/webp/3.webp" alt="">
+    </div>
+    <div class="div3-testimonios">
+      <img src="/multimedia/images/webp/4.webp" alt="">
+    </div>
+    </div>
+</section>
+<!-- Fin Testimonios -->
 
+<!-- Inicio Tips -->
 <!-- Inicio Tips Mobile -->
 <h3 id="tips-mb" class="titulo-principal-tips-mb">Tips</h3>
 <h3 class="subtitulo-tips-mb">A la hora de realizar tu tratamiento de Depilación Láser tené en cuenta éstas recomendaciones</h3> 
@@ -341,7 +380,8 @@
   </div>
 </footer>
 <!-- Fin Footer -->
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>
