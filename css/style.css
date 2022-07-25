@@ -695,28 +695,138 @@ body::-webkit-scrollbar-thumb {
   outline: 0;
   box-sizing: border-box; }
 
-.container-turnos {
+.boton-volver-izq {
+  font-size: 25px;
+  margin-top: 70px;
+  text-decoration: none;
+  color: #3d321d;
+}
+
+.boton-volver-der {
+  display: flex;
+  justify-content: end;
+  font-size: 25px;
+  margin-top: -28px;
+  text-decoration: none;
+  color: #3d321d;
+}
+
+.formulario {
+  display: flex;
+}
+
+.contenedor-seccion-promociones {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+  display: grid;
+  text-align: center;
+  grid-template-areas: "columna1 columna2 columna3"
+  "imagen-promo1 imagen-promo2 imagen-promo3"
+  "nombre-promo nombre-promo nombre-promo"
+  "texto-promo texto-promo texto-promo";
+  gap: 3px;
+  background-color: #dbc8ae;
+  }
+
+.contenedor-seccion-promociones2 {
+  width: 90%;
+  max-width: 1200px;
+  margin: -110px auto auto auto;
+  padding: 0px 40px 40px 40px;
+  display: grid;
+  text-align: center;
+  grid-template-areas: "columna1 columna2 columna3"
+ "imagen-promo1 imagen-promo2 imagen-promo3"
+ "nombre-promo nombre-promo nombre-promo"
+ "texto-promo texto-promo texto-promo";
+  gap: 3px;
+  background-color: #dbc8ae;
+}
+
+.container-general-form {
+  background-color: #dbc8ae;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+}
+
+.container-form1 {
+  margin-top: 80px;
+  margin-left: 80px;
+  margin-bottom: 150px;
+  text-align: center;
+}
+
+.zonas-depi {
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.titulo-principal-form {
+  width: auto;
+  height: auto;
+  max-width: 38.75rem;
+  max-height: 18.75rem;
+  display: flex;
+  margin-top: 90px;
+  margin-left: 280px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 3.75rem;
+  color: black;
+  font-style: normal;
+  font-weight: lighter;
+}
+
+.parrafo-form {
+  font-family: 'Playfair Display', serif;
+  width: auto;
+  height: auto;
   display: flex;
   justify-content: center;
-  background-color: #e9d9c4;
- }
-  .container-turnos .parrafo-turnos {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 25px;
-    font-family: 'Playfair Display', serif;
-    color: black;
-    padding: 100px;
-    margin-top: 10%;
-  }
-  .container-turnos a {
-    display: flex;
-    justify-content: center; }
-    .container-turnos a .wp-turnos {
-      width: 5%;
-      margin-bottom: 6.50rem; 
-    }
+  font-size: 1.3rem;
+}
+
+.formulario {
+  font-size: 1.18rem;
+  font-family: 'Playfair Display', serif;
+  margin-top: 3.12rem;
+  margin-bottom: 10px;
+  
+}
+
+.container-botonAP {
+  width: 90%;
+  max-width: 75rem;
+  margin: auto;
+  padding: 2.5rem;
+  background-color: #dbc8ae;
+  display: flex;
+  justify-content: center;
+}
+
+.boton-armarpack {
+  background-color: #5d4b2b;
+  margin-top: -70px;
+  margin-bottom: 40px;
+}
+
+.enlace-botonAP {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+.enlace-botonAP:hover {
+  color: rgb(230, 230, 230);
+}
+
+
     
 /* Fin Sección Turnos */
 /* Inicio FAQs*/
@@ -862,6 +972,19 @@ body::-webkit-scrollbar-thumb {
         padding-top: auto;
       }
       
+      .contenedor-promociones2{
+        grid-template-areas: "columna1"
+                               "columna2"
+                               "columna3";
+          row-gap: -300px;
+          margin-left: -1.25rem;
+          padding: none;
+          background-color: rgb(233, 217, 196);
+          align-items: center;
+          justify-content: center;
+          margin: auto;
+          row-gap: 50px;
+      }
         .contenedor-promociones {
         
           grid-template-areas: "columna1"
@@ -1037,6 +1160,15 @@ body::-webkit-scrollbar-thumb {
         font-size: 18px;
       }
 
+      .tabla-turnos {
+        display: block;
+        width: fit-content;
+        margin-top: 5rem;
+        margin-left: 0.625rem;
+        margin-bottom: 5rem;
+        max-width: 90%;
+      }
+
       .container-faqs {
         width: 100%;
         margin-left: 0px;
@@ -1093,7 +1225,19 @@ body::-webkit-scrollbar-thumb {
           margin: auto;
           padding-top: auto;
         }
-        
+        .contenedor-promociones2{
+          grid-template-areas: "columna1"
+                                 "columna2"
+                                 "columna3";
+            row-gap: -300px;
+            margin-left: -1.25rem;
+            padding: none;
+            background-color: rgb(233, 217, 196);
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            row-gap: 50px;
+        }
           .contenedor-promociones {
           
             grid-template-areas: "columna1"
@@ -1270,9 +1414,27 @@ body::-webkit-scrollbar-thumb {
           grid-gap: 30px;
           padding: 35px 0px;
         }
-        
+
+        .tabla-turnos {
+          display: block;
+          width: fit-content;
+          margin-top: 5rem;
+          margin-left: 0.625rem;
+          margin-bottom: 5rem;
+          max-width: 90%;
+        }
+
         .parrafo-turnos {
           font-size: 18px;
+        }
+
+        .tabla-turnos {
+          display: block;
+          width: fit-content;
+          margin-top: 5rem;
+          margin-left: 0.625rem;
+          margin-bottom: 5rem;
+          max-width: 90%;
         }
 
         .container-faqs {
@@ -1321,6 +1483,20 @@ body::-webkit-scrollbar-thumb {
           margin: auto;
           padding-top: auto;
         }
+
+        .contenedor-promociones2{
+          grid-template-areas: "columna1"
+                               "columna2"
+                               "columna3";
+            row-gap: -300px;
+            margin-left: -1.25rem;
+            padding: none;
+            background-color: rgb(233, 217, 196);
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            row-gap: 50px;
+        }
         
           .contenedor-promociones {
           
@@ -1333,7 +1509,7 @@ body::-webkit-scrollbar-thumb {
             background-color: rgb(233, 217, 196);
             align-items: center;
             justify-content: center;
-            margin: auto;
+            margin: auto auto auto auto;
             row-gap: 50px;
         }
         
@@ -1490,10 +1666,6 @@ body::-webkit-scrollbar-thumb {
         
         .contenedor-inspo {
           display: none;
-        }
-        
-        .parrafo-turnos {
-          font-size: 18px;
         }
 
         .container-faqs {
