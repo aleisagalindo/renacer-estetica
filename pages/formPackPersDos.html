@@ -70,7 +70,7 @@
 
 <!-- Inicio Nav Vista Mobile -->
 <header>
-  <nav class="navbar d-lg-none navbar-light color-nav-mb">
+  <nav class="navbar d-lg-none navbar-light fixed-top color-nav-mb">
     <div class="container-fluid">
       <a class="navbar-brand logo-nav-mobile" href="#">renacer</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -79,9 +79,8 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-link active enlace-nav-mb" aria-current="page" href="/index.html">INICIO</a>
+          <a class="nav-link enlace-nav-mb" href="turnos.html">COMPRAR</a>
           <a class="nav-link enlace-nav-mb" href="./faq.html">FAQs</a>
-          <a class="nav-link enlace-nav-mb" href="#">Pricing</a>
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
         </div>
       </div>
     </div>
@@ -91,78 +90,23 @@
 <!-- Fin Nav Vista Mobile -->
 <!-- Inicio Sección Pack Personalizdo -->
 <section class="container-general-form">
-    <a href="/pages/turnos.html" class="fa-solid fa-arrow-left boton-volver"></a>
-    <h2 class="titulo-principal-form">Armá tu propio pack</h2>
+    <h2 class="titulo-principal-form2">Ingresá tu información</h2>
     <!-- Inicio Formulario -->
-    <div class="container container-grid-form">
-        <div class="row">
+    <div class="container-grid-form">
             <div class="col mt-5">
-                <div class="mb-3 w-50">
+                <div class="mb-3 input-form1">
                     <label for="formGroupExampleInput" class="form-label">Ingresá tu nombre completo:</label>
                     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="ej: María Gómez">
                   </div>
-                  <div class="mb-3 w-50">
+                  <div class="input-form2">
                     <label for="formGroupExampleInput2" class="form-label">Ingresa tu número de teléfono (sin guiones)</label>
                     <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="ej: +54 381 333 4444">
                 </div>
             </div>
-            <!-- <p class="parrafo-form">Seleccioná las zonas que deseas realizarte:</p> -->
-            <div class="col">
-                <div class="formulario">
-                    <div class="form-check">
-                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                     <label class="form-check-label" for="flexCheckDefault">
-                       Bozo
-                     </label>
-                   </div>
-                   <div class="form-check">
-                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                     <label class="form-check-label" for="flexCheckChecked">
-                       Entrecejo
-                     </label>
-                   </div>
-                   <div class="form-check">
-                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                     <label class="form-check-label" for="flexCheckDefault">
-                       Nuca
-                     </label>
-                   </div>
-                   <div class="form-check">
-                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                     <label class="form-check-label" for="flexCheckChecked">
-                       Cuello
-                     </label>
-                   </div>
-                   <div class="form-check">
-                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                     <label class="form-check-label" for="flexCheckDefault">
-                       Espalda
-                     </label>
-                   </div>
-                   <div class="form-check">
-                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                     <label class="form-check-label" for="flexCheckChecked">
-                        Piernas
-                     </label>
-                   </div>
-                   <div class="form-check">
-                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                     <label class="form-check-label" for="flexCheckDefault">
-                       Bikini
-                     </label>
-                   </div>
-                   <div class="form-check">
-                     <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                     <label class="form-check-label" for="flexCheckChecked">
-                       Tiro de cola
-                     </label>
-                   </div>
-                </div>
-            </div>
-        </div>
-        
     </div>
-   </section>
+<a href="/pages/formPackPersUno.html" class="fa-solid fa-arrow-left boton-volver-izq"></a>
+<a href="#" class="fa-solid fa-arrow-right boton-volver-der"></a>
+</section>
 <!-- Fin Sección Pack Personalizado -->
 <!-- Inicio Footer -->
 </footer>
@@ -197,5 +141,6 @@
   </div>
 </footer>
 <!-- Fin Footer -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

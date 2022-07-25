@@ -826,7 +826,38 @@ body::-webkit-scrollbar-thumb {
   color: rgb(230, 230, 230);
 }
 
+/* Inicio FORM 2 */
 
+.titulo-principal-form2 {
+  width: auto;
+  height: auto;
+  max-width: 38.75rem;
+  max-height: 18.75rem;
+  display: flex;
+  margin-top: 70px;
+  margin-left: 250px;
+  margin-bottom: 75px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 3.75rem;
+  color: black;
+  font-style: normal;
+  font-weight: lighter;
+}
+
+.input-form1 {
+  width: 50%;
+  margin-left: 270px;
+}
+
+.input-form2 {
+  width: 50%;
+  margin-left: 270px;
+  margin-bottom: 90px;
+}
+
+
+/*Fin FORM 2 */
     
 /* Fin Sección Turnos */
 /* Inicio FAQs*/
@@ -1216,15 +1247,40 @@ body::-webkit-scrollbar-thumb {
       }
 
       .boton-volver-der {
-        margin-top: 4.81rem;
+        width: auto;
+        height: auto;
       }
       .boton-volver-izq {
-        margin-top: auto;
+        width: auto;
+        height: auto;
       }
 
       .zonas-depi {
         margin: auto;
       }
+
+      /* Inicio FORM 2 */
+
+      .titulo-principal-form2 {
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        font-size: 2.5rem;
+        margin: 4.37rem 0.93rem 0.93rem 0.93rem;
+        }
+
+      .input-form1 {
+       width: 90%;
+       margin: auto;
+       }
+
+      .input-form2 {
+       width: 90%;
+       margin: auto auto 3.12rem auto;
+       }
+
+/*Fin FORM 2 */
 
       .container-faqs {
         width: 100%;
@@ -1238,6 +1294,7 @@ body::-webkit-scrollbar-thumb {
         justify-content: center;
         margin: -10.62rem auto auto auto;
       }
+
 
       }
     
@@ -1543,6 +1600,29 @@ body::-webkit-scrollbar-thumb {
           margin: auto;
         }
 
+/* Inicio FORM 2 */
+
+      .titulo-principal-form2 {
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        font-size: 2.5rem;
+        margin: 4.37rem 0.93rem 0.93rem 0.93rem;
+        }
+
+      .input-form1 {
+       width: 90%;
+       margin: auto;
+       }
+
+      .input-form2 {
+       width: 90%;
+       margin: auto auto 3.12rem auto;
+       }
+
+/*Fin FORM 2 */
+
         .container-faqs {
           width: 100%;
           margin-left: 0px;
@@ -1769,6 +1849,12 @@ body::-webkit-scrollbar-thumb {
           display: none;
         }
 
+        .pie-pagina .grup-1{
+          width: 90%;
+          grid-template-columns: repeat(1,1fr);
+          grid-gap: 30px;
+          padding: 35px 0px;}
+
         .container-faqs {
           width: 100%;
           margin-left: 0px;
@@ -1834,7 +1920,7 @@ body::-webkit-scrollbar-thumb {
           justify-content: center;
           text-align: center;
           font-size: 40px;
-          margin: 25px;
+          margin: 45px;
         }
   
         .parrafo-form {
@@ -1844,7 +1930,7 @@ body::-webkit-scrollbar-thumb {
           justify-content: center;
           text-align: center;
           font-size: 20px;
-          margin: 25px;
+          margin: 10px;
         }
   
         .formulario {
@@ -1853,10 +1939,12 @@ body::-webkit-scrollbar-thumb {
           display: block;
           justify-content: center;
           text-align: left;
+          margin: auto;
+          padding: auto;
         }
   
         .boton-volver-der {
-          margin-top: -1.81rem;
+          margin-top: -1.80rem;
         }
         .boton-volver-izq {
           margin-top: auto;
@@ -1865,6 +1953,29 @@ body::-webkit-scrollbar-thumb {
         .zonas-depi {
           margin: auto;
         }
+
+        /* Inicio FORM 2 */
+
+      .titulo-principal-form2 {
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        font-size: 2.5rem;
+        margin: 4.37rem 0.93rem 0.93rem 0.93rem;
+        }
+
+      .input-form1 {
+       width: 90%;
+       margin: auto;
+       }
+
+      .input-form2 {
+       width: 90%;
+       margin: auto auto 3.12rem auto;
+       }
+
+/*Fin FORM 2 */
         
         }
         
