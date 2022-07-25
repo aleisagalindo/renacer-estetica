@@ -1193,8 +1193,8 @@ body::-webkit-scrollbar-thumb {
         height: auto;
         display: flex;
         justify-content: center;
-        font-size: 40px;
-        margin: 25px;
+        font-size: 2.5rem;
+        margin: 0.93rem;
       }
 
       .parrafo-form {
@@ -1216,7 +1216,7 @@ body::-webkit-scrollbar-thumb {
       }
 
       .boton-volver-der {
-        margin-top: -1.81rem;
+        margin-top: 4.81rem;
       }
       .boton-volver-izq {
         margin-top: auto;
