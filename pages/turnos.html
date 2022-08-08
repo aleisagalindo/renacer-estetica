@@ -19,7 +19,7 @@
      <!-- CSS -->
     <link rel="stylesheet" href="/css/style.css" />
     <!-- JS -->
-    <script src="../js/main.js"></script>
+    <script src="../js/packPersonalizado.js"></script>
     <title>Renacer Estética / Turnos</title>
     <link rel="icon" href="/multimedia/icons/logo-header.ico">
     
@@ -44,26 +44,20 @@
             </li>
             <label class="logo-nav">renacer</label>
             <li>
-              <a
-                target="_blank"
-                href="https://www.instagram.com/renacer.esteticatuc/?hl=es-la"
-              >
-                <img
-                  class="redes-nav-ig"
-                  src="/multimedia/icons/instagram.png"
-                  alt="img-instagram"
-              /></a>
+              <a target="_blank" href="https://www.instagram.com/renacer.esteticatuc/?hl=es-la">
+                <i class="fa fa-instagram redes-nav-ig"></i>
+              </a>
             </li>
             <li>
-              <a
-                target="_blank"
-                href="https://api.whatsapp.com/send?phone=5493815611530"
-              >
-                <img
-                  class="redes-nav-wp"
-                  src="/multimedia/icons/whatsapp.png"
-                  alt="img-whatsapp"
-              /></a>
+              <a target="_blank" href="https://api.whatsapp.com/send?phone=5493815611530"">
+                <i class="fa fa-whatsapp redes-nav-wp"></i>
+              </a>
+            </li>
+            <li>
+              <button class="switch" id="cambiarModo">
+                 <span><i class="fa-solid fa-sun"></i></span>
+                 <span><i class="fa-solid fa-moon"></i></span>
+              </button>
             </li>
           </ul>
         </nav>
@@ -88,8 +82,10 @@
   </nav>
 </header>
 <!-- Fin Nav Vista Mobile -->
-<!-- Inicio Sección Turnos -->
 <!-- Inicio Sección Catálogo -->
+<div>
+  <h3 class="titulo-principal-promo-mb">Conocé nuestras promos</h3>
+</div>
 <section class="contenedor-seccion-promociones">
   <div class="columna-1"> 
        <div>
@@ -159,6 +155,7 @@
         <figure>
           <a href="/pages/index.html">
              <img src="/multimedia/icons/logo-footer.png" alt="logo de renacer estetica">
+             <img class="logo-footer-dark" src="/multimedia/images/webp/logo-footer-dark.png" alt="logo renacer estetica">
           </a>
         </figure>
        </div>
@@ -173,9 +170,9 @@
        <div class="box">
         <h2>CONTACTÁNOS</h2>
         <div class="red-social">
-          <a href="#" class="fa fa-facebook"></a>
-          <a href="https://www.instagram.com/renacer.esteticatuc/?hl=es-la" class="fa fa-instagram"></a>
-          <a href="https://api.whatsapp.com/send?phone=5493815611530" class="fa fa-whatsapp"></a>
+          <a target="_blank" href="https://www.facebook.com/RenacerEsteticatuc" class="fa fa-facebook"></a>
+          <a target="_blank" href="https://www.instagram.com/renacer.esteticatuc/?hl=es-la" class="fa fa-instagram"></a>
+          <a target="_blank" href="https://api.whatsapp.com/send?phone=5493815611530" class="fa fa-whatsapp"></a>
         </div>
        </div>
   </div>
@@ -185,6 +182,7 @@
 </footer>
 <!-- Fin Footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="/js/darkMode.js"></script>
   </main>
  </body>
 </html>

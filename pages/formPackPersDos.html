@@ -18,8 +18,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
      <!-- CSS -->
     <link rel="stylesheet" href="/css/style.css" />
+    <!-- Jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
     <!-- JS -->
-    <script src="../js/main.js"></script>
+    <script src="../js/whatsapp.js"></script>
     <title>Renacer Estética / Turnos / Armá Tu Propio Pack</title>
     <link rel="icon" href="/multimedia/icons/logo-header.ico">
 </head>
@@ -90,20 +92,79 @@
 <!-- Fin Nav Vista Mobile -->
 <!-- Inicio Sección Pack Personalizdo -->
 <section class="container-general-form">
-    <h2 class="titulo-principal-form2">Ingresá tu información</h2>
     <!-- Inicio Formulario -->
-    <div class="container-grid-form">
-            <div class="col mt-5">
-                <div class="mb-3 input-form1">
-                    <label for="formGroupExampleInput" class="form-label">Ingresá tu nombre completo:</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="ej: María Gómez">
-                  </div>
-                  <div class="input-form2">
-                    <label for="formGroupExampleInput2" class="form-label">Ingresa tu número de teléfono (sin guiones)</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="ej: +54 381 333 4444">
-                </div>
+    <h2 class="titulo-principal-form">Armá tu propio pack</h2>
+    <p class="parrafo-form">Seleccioná las zonas que deseas realizarte:</p>
+<form id="formulario">
+    <!-- Inicio Formulario 1 -->
+     <div class="container-form1">
+         <div class="formulario-zonas">
+             <div class="form-check">
+              <input class="form-check-input zonaSeleccionada" type="checkbox" value="bozo" id="bozo">
+              <label class="form-check-label zonas-depi" for="flexCheckDefault">
+                Bozo
+              </label>
             </div>
-    </div>
+            <div class="form-check">
+              <input class="form-check-input zonaSeleccionada" type="checkbox" value="entrecejo" id="entrecejo">
+              <label class="form-check-label zonas-depi" for="flexCheckChecked">
+                Entrecejo
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input zonaSeleccionada" type="checkbox" value="nuca" id="nuca">
+              <label class="form-check-label zonas-depi" for="flexCheckDefault">
+                Nuca
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input zonaSeleccionada" type="checkbox" value="cuello" id="cuello">
+              <label class="form-check-label zonas-depi" for="flexCheckChecked">
+                Cuello
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input zonaSeleccionada" type="checkbox" value="espalda" id="espalda">
+              <label class="form-check-label zonas-depi" for="flexCheckDefault">
+                Espalda
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input zonaSeleccionada" type="checkbox" value="piernas" id="piernas">
+              <label class="form-check-label zonas-depi" for="flexCheckChecked">
+                 Piernas
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input zonaSeleccionada" type="checkbox" value="bikini" id="bikini">
+              <label class="form-check-label zonas-depi" for="flexCheckDefault">
+                Bikini
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input zonaSeleccionada" type="checkbox" value="tirodecola" id="tirodecola">
+              <label class="form-check-label zonas-depi" for="flexCheckChecked">
+                Tiro de cola
+              </label>
+            </div>
+         </div>
+     </div>
+     <!-- Fin Formulario 1 -->
+     <h2 class="titulo-principal-form2">Ingresá tu información</h2>
+     <div class="container-grid-form">
+          <div class="box-input input-form1 mb-3">
+              <label class="form-label">Ingresá tu nombre completo:</label>
+              <input name="nombre" type="text" class="form-control" id="nombre" placeholder="ej: María Gómez" required>
+            </div>
+            <div class="box-input input-form2">
+              <label class="form-label">Ingresa tu número de teléfono (sin guiones):</label>
+              <input name="numeroCel" type="text" class="form-control" id="numeroCel" placeholder="ej: +54 9 381 333 4444" required>
+          </div>
+     </div>
+     <div class="container-btn-enviar">
+      <button id="submit" type="submit" class="boton btn text-light boton-enviar-form">Enviar</button>
+     </div>
+</form>
 <a href="/pages/formPackPersUno.html" class="fa-solid fa-arrow-left boton-volver-izq"></a>
 <a href="#" class="fa-solid fa-arrow-right boton-volver-der"></a>
 </section>
@@ -142,5 +203,18 @@
 </footer>
 <!-- Fin Footer -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script type="text/javascript">
+  $(".box-input input").on("focus", function(){
+      $(this).addClass("focus");
+  });
+
+  $(".box-input input").on("blur", function(){
+      if($(this).val() == ""){
+          $(this).removeClass("focus");
+      }
+  });
+</script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="/js/whatsapp.js"></script>
 </body>
 </html>

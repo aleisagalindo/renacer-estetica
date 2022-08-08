@@ -49,26 +49,20 @@
           <label class="logo-nav">renacer</label>
 
           <li>
-            <a
-              target="_blank"
-              href="https://www.instagram.com/renacer.esteticatuc/?hl=es-la"
-            >
-              <img
-                class="redes-nav-ig"
-                src="/multimedia/icons/instagram.ico"
-                alt="logo instagram"
-            /></a>
+            <a target="_blank" href="https://www.instagram.com/renacer.esteticatuc/?hl=es-la">
+              <i class="fa fa-instagram redes-nav-ig"></i>
+            </a>
           </li>
           <li>
-            <a
-              target="_blank"
-              href="https://api.whatsapp.com/send?phone=5493815611530"
-            >
-              <img
-                class="redes-nav-wp"
-                src="/multimedia/icons/whatsapp.ico"
-                alt="logo whatsapp"
-            /></a>
+            <a target="_blank" href="https://api.whatsapp.com/send?phone=5493815611530"">
+              <i class="fa fa-whatsapp redes-nav-wp"></i>
+            </a>
+          </li>
+          <li>
+            <button class="switch" id="cambiarModo">
+               <span><i class="fa-solid fa-sun"></i></span>
+               <span><i class="fa-solid fa-moon"></i></span>
+            </button>
           </li>
         </ul>
       </nav>
@@ -76,11 +70,11 @@
 
 <!-- Inicio Nav Vista Mobile -->
 <header>
-  <nav class="navbar d-lg-none navbar-light fixed-top color-nav-mb">
+  <nav class="navbar d-lg-none navbar-light fixed-top color-nav-mb text-reset">
     <div class="container-fluid">
       <a class="navbar-brand logo-nav-mobile" href="#">renacer</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler text-reset" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon text-reset"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
@@ -100,7 +94,7 @@
 <!-- Inicio Contenido Principal -->
 <!-- Inicio Carrusel Vista Mobile -->
 <section>
-<div id="carouselExampleFade" class=" .d-none .d-sm-block .d-md-none carousel slide carousel-fade mt-4 mh-100 carrusel-mobile" data-bs-ride="carousel">
+<div id="carouselExampleFade" class=" .d-none .d-sm-block .d-md-none carousel slide carousel-fade mt-4 pt-5 mh-100 carrusel-mobile" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img loading="lazy" src="/multimedia/images/webp/cara-mujer.webp" class="d-block w-100 h-100 carrusel1mb" alt="imagen de cara de mujer sonriendo">
@@ -341,6 +335,7 @@
 <section class="contenedor-inspo">
   <div>
     <img loading="lazy" class="inspo" src="/multimedia/images/webp/inspo.webp" alt="texto inspirativo, shine, naturalness, self care">
+    <img loading="lazy" class="inspo-dark" src="/multimedia/images/webp/inspo-dark.webp" alt="texto inspirativo, shine, naturalness, self care">
   </div>
 </section>
 
@@ -348,13 +343,13 @@
 </main>
 
 <!-- Inicio Footer -->
-</footer>
 <footer class="pie-pagina">
   <div class="grup-1">
        <div class="box">
         <figure>
           <a href="index.html">
              <img src="/multimedia/images/webp/logo-footer.webp" alt="logo de renacer estetica">
+             <img class="logo-footer-dark" src="/multimedia/images/webp/logo-footer-dark.png" alt="logo renacer estetica">
           </a>
         </figure>
        </div>
@@ -369,9 +364,9 @@
        <div class="box">
         <h2>CONTACTÁNOS</h2>
         <div class="red-social">
-          <a href="#" class="fa fa-facebook"></a>
-          <a href="https://www.instagram.com/renacer.esteticatuc/?hl=es-la" class="fa fa-instagram"></a>
-          <a href="https://api.whatsapp.com/send?phone=5493815611530" class="fa fa-whatsapp"></a>
+          <a target="_blank" href="https://www.facebook.com/RenacerEsteticatuc" class="fa fa-facebook"></a>
+          <a target="_blank" href="https://www.instagram.com/renacer.esteticatuc/?hl=es-la" class="fa fa-instagram"></a>
+          <a target="_blank" href="https://api.whatsapp.com/send?phone=5493815611530" class="fa fa-whatsapp"></a>
         </div>
        </div>
   </div>
@@ -380,8 +375,10 @@
   </div>
 </footer>
 <!-- Fin Footer -->
+
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>AOS.init();</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  </body>
+<script src="js/darkMode.js"></script>
+</body>
 </html>

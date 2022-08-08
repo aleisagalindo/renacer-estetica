@@ -18,8 +18,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
      <!-- CSS -->
     <link rel="stylesheet" href="/css/style.css" />
-    <!-- JS -->
-    <script src="../js/main.js"></script>
     <title>Renacer Estética / Turnos / Armá Tu Propio Pack</title>
     <link rel="icon" href="/multimedia/icons/logo-header.ico">
 </head>
@@ -42,26 +40,20 @@
             </li>
             <label class="logo-nav">renacer</label>
             <li>
-              <a
-                target="_blank"
-                href="https://www.instagram.com/renacer.esteticatuc/?hl=es-la"
-              >
-                <img
-                  class="redes-nav-ig"
-                  src="/multimedia/icons/instagram.png"
-                  alt="img-instagram"
-              /></a>
+              <a target="_blank" href="https://www.instagram.com/renacer.esteticatuc/?hl=es-la">
+                <i class="fa fa-instagram redes-nav-ig"></i>
+              </a>
             </li>
             <li>
-              <a
-                target="_blank"
-                href="https://api.whatsapp.com/send?phone=5493815611530"
-              >
-                <img
-                  class="redes-nav-wp"
-                  src="/multimedia/icons/whatsapp.png"
-                  alt="img-whatsapp"
-              /></a>
+              <a target="_blank" href="https://api.whatsapp.com/send?phone=5493815611530"">
+                <i class="fa fa-whatsapp redes-nav-wp"></i>
+              </a>
+            </li>
+            <li>
+              <button class="switch" id="cambiarModo">
+                 <span><i class="fa-solid fa-sun"></i></span>
+                 <span><i class="fa-solid fa-moon"></i></span>
+              </button>
             </li>
           </ul>
         </nav>
@@ -92,61 +84,28 @@
 <section class="container-general-form">
   <h2 class="titulo-principal-form">Armá tu propio pack</h2>
     <!-- Inicio Formulario 1 -->
-     <p class="parrafo-form">Seleccioná las zonas que deseas realizarte:</p>
-     <div class="container-form1">
-         <div class="formulario">
-             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label zonas-depi" for="flexCheckDefault">
-                Bozo
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label zonas-depi" for="flexCheckChecked">
-                Entrecejo
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label zonas-depi" for="flexCheckDefault">
-                Nuca
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label zonas-depi" for="flexCheckChecked">
-                Cuello
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label zonas-depi" for="flexCheckDefault">
-                Espalda
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label zonas-depi" for="flexCheckChecked">
-                 Piernas
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label zonas-depi" for="flexCheckDefault">
-                Bikini
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label zonas-depi" for="flexCheckChecked">
-                Tiro de cola
-              </label>
-            </div>
-         </div>
-     </div>
+     <p class="parrafo-form">Completá el siguiente formulario:</p>
+     <form id="formulario" class="formulario d-block">
+      <div class="box-input mb-3">
+          <label class="form-label">Ingresá tu nombre completo:</label>
+          <input class="form-control" name="nombre" id="nombre" type="text" placeholder="ej: María Gómez" required>
+      </div>
+      <div class="box-input mb-3">
+          <label class="form-label">Ingresá tu número de teléfono (sin guiones):</label>
+          <input class="form-control" name="numero" id="numero" type="tel" placeholder="ej: +54 9 381 333 4444" required>
+      </div>
+      <div class="box-input mb-3">
+          <label class="form-label">Ingresá las zonas que deseas realizarte:</label>
+          <input class="form-control" name="zonas" id="zonas" type="text" placeholder="ej: Bozo, Piernas, Axilas, etc" required>
+      </div>
+      <div class="box-input mb-5">
+        <label class="form-label">Ingesá el tipo de Medio de Pago:</label>
+        <input class="form-control" name="pago" id="pago" type="text" placeholder="Efectivo, Tarjetas Débito/Cédito o Transferencia Bancaria" required>
+    </div>
+      <button id="submit" type="submit" class="boton btn"><i class="fab fa-whatsapp"></i> Enviar</button>
+  </form>
    <a href="/pages/turnos.html" class="fa-solid fa-arrow-left boton-volver-izq"></a>
-   <a href="/pages/formPackPersDos.html" class="fa-solid fa-arrow-right boton-volver-der"></a>
+   <!-- <a href="/pages/formPackPersDos.html" class="fa-solid fa-arrow-right boton-volver-der"></a> -->
 </section>
 <!-- Fin Sección Pack Personalizado 1 -->
 <!-- Inicio Footer -->
@@ -157,6 +116,7 @@
         <figure>
           <a href="/pages/index.html">
              <img src="/multimedia/icons/logo-footer.png" alt="logo de renacer estetica">
+             <img class="logo-footer-dark" src="/multimedia/images/webp/logo-footer-dark.png" alt="logo renacer estetica">
           </a>
         </figure>
        </div>
@@ -171,9 +131,9 @@
        <div class="box">
         <h2>CONTACTÁNOS</h2>
         <div class="red-social">
-          <a href="#" class="fa fa-facebook"></a>
-          <a href="https://www.instagram.com/renacer.esteticatuc/?hl=es-la" class="fa fa-instagram"></a>
-          <a href="https://api.whatsapp.com/send?phone=5493815611530" class="fa fa-whatsapp"></a>
+          <a target="_blank" href="https://www.facebook.com/RenacerEsteticatuc" class="fa fa-facebook"></a>
+          <a target="_blank" href="https://www.instagram.com/renacer.esteticatuc/?hl=es-la" class="fa fa-instagram"></a>
+          <a target="_blank" href="https://api.whatsapp.com/send?phone=5493815611530" class="fa fa-whatsapp"></a>
         </div>
        </div>
   </div>
@@ -182,6 +142,22 @@
   </div>
 </footer>
 <!-- Fin Footer -->
+<script type="text/javascript">
+  $(".box-input input").on("focus", function(){
+      $(this).addClass("focus");
+  });
+
+  $(".box-input input").on("blur", function(){
+      if($(this).val() == ""){
+          $(this).removeClass("focus");
+      }
+  });
+
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!-- JQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+<script src="/js/whatsapp.js"></script>
+<script src="/js/darkMode.js"></script>
 </body>
 </html>
