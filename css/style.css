@@ -297,11 +297,11 @@ color: #ebddcf;
 .body-inicio-turnos.dark  .form-label {
   color: #ebddcf;
 }
-.body-inicio-turnos .color-nav-mb {
+.body-inicio-turnos.dark .color-nav-mb {
   background-color: #3d321d;
 }
 .body-inicio-turnos.dark .logo-nav-mobile {
-color: #ebddcf;
+  color: #ebddcf;
 }
 .body-inicio-turnos.dark .color-nav-mb button {
   color: #ebddcf;
@@ -311,6 +311,9 @@ color: #ebddcf;
 }
 .body-inicio-turnos.dark .container-fluid .active {
   color: #e9d9c4;
+}
+.color-nav-mb {
+  background-color: #e9d9c4;
 }
 /*---------- Modo Oscuro ------------*/
 
@@ -1349,6 +1352,9 @@ body::-webkit-scrollbar-thumb {
   
       .nav-desktop {
         display: none;
+      }
+      .color-nav-mb {
+        background-color: #ebddcf;
       }
       
       .logo-nav-mobile {
