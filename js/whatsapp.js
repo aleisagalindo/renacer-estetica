@@ -25,12 +25,15 @@ formulario.addEventListener('submit', (event) => {
         let zonas = document.querySelector('#zonas').value
         let pago = document.querySelector('#pago').value
         let mensaje = 'send?phone=' + telefono + '&text=*_Formulario Renacer Estética Tuc_*%0A*¿Cuál es tu nombre?*%0A' + nombre + '%0A*¿Cuál es tu número de celular?*%0A' + numero + '%0A*¿Cúales zonas deseas realizarte?*%0A' + zonas + '%0A*¿Cómo abonarás el tratamiento?*%0A' + pago + ''
-        if(isMobile()) {
-            window.open(urlMobile + mensaje, '_blank')
-        }else{
-            window.open(urlDesktop + mensaje, '_blank')
-        }
+        // Operador Ternario
+        isMobile() ? window.open(urlMobile + mensaje, '_blank') :  window.open(urlDesktop + mensaje, '_blank');
+        // if(isMobile()) {
+        //     window.open(urlMobile + mensaje, '_blank')
+        // }else{
+        //     window.open(urlDesktop + mensaje, '_blank')
+        // }
         buttonSubmit.innerHTML = '<i class="fab fa-whatsapp"></i> Enviar WhatsApp'
         buttonSubmit.disabled = false
     }, 3000);
 });
+
