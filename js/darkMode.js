@@ -4,7 +4,7 @@ btnSwitch.addEventListener('click', () => {
 	document.body.classList.toggle('dark');
 	btnSwitch.classList.toggle('active');
     // Guardar el modo oscuro en localStorage
-    // Operador Ternario
+    // Operador Ternario 
     document.body.classList.contains('dark') ? localStorage.setItem('dark-mode', 'true') : localStorage.setItem('dark-mode', 'false');
     // if(document.body.classList.contains('dark')){
     //     localStorage.setItem('dark-mode', 'true');
@@ -20,6 +20,8 @@ if(localStorage.getItem('dark-mode') === 'true'){
     document.body.classList.remove('dark');
     btnSwitch.classList.remove('active');
 };
+
+
 
 
 
