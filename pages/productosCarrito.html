@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/851501c68f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body class="body-inicio-turnos">
+    <!-- Inicio Nav -->
+     <header>
+        <nav class="nav-desktop">
+          <ul class="menu-nav">
+            <li>
+                <a class="enlace-nav" href="../index.html">inicio</a>
+              </li>
+            <li>
+              <a class="enlace-nav" href="../index.html">nosotros</a>
+            </li>
+            <li>
+              <a class="enlace-nav" href="../index.html">tips</a>
+            </li>
+            <li>
+              <a class="enlace-nav" href="/pages/faq.html">faq</a>
+            </li>
+            <label class="logo-nav">renacer</label>
+            <li>
+              <a target="_blank" href="https://www.instagram.com/renacer.esteticatuc/?hl=es-la">
+                <i class="fa fa-instagram redes-nav-ig"></i>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://api.whatsapp.com/send?phone=5493815611530"">
+                <i class="fa fa-whatsapp redes-nav-wp"></i>
+              </a>
+            </li>
+            <li>
+              <button class="switch" id="cambiarModo">
+                 <span><i class="fa-solid fa-sun"></i></span>
+                 <span><i class="fa-solid fa-moon"></i></span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+<!-- Fin Nav -->
+
+<!-- Inicio Nav Vista Mobile -->
+<!-- <header>
+  <nav class="navbar d-lg-none navbar-light fixed-top color-nav-mb">
+    <div class="container-fluid">
+      <a class="navbar-brand logo-nav-mobile" href="#">renacer</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active enlace-nav-mb" aria-current="page" href="/index.html">INICIO</a>
+          <a class="nav-link enlace-nav-mb" href="turnos.html">COMPRAR</a>
+          <a class="nav-link enlace-nav-mb" href="./faq.html">FAQs</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header> -->
+<!-- Fin Nav Vista Mobile -->
+<section class="seccion-carrito">
+     <div class="container">
+       <table class="table tabla-carrito">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Item</th>
+            <th scope="col">Cantidad</th>
+            <th scope="col">Acción</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody id="items"></tbody>
+        <tfoot>
+          <tr id="footer">
+            <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+          </tr>
+        </tfoot>
+      </table>
+
+       <div class="row" id="cards"></div>
+     </div>
+
+     <template id="template-footer">
+      <th scope="row" colspan="2">Total productos</th>
+      <td>10</td>
+      <td>
+          <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+              vaciar todo
+          </button>
+      </td>
+      <td class="font-weight-bold">$ <span>5000</span></td>
+  </template>
+  
+  <template id="template-carrito">
+    <tr>
+      <th scope="row">id</th>
+      <td>Café</td>
+      <td>1</td>
+      <td>
+          <button class="btn btn-info btn-sm">
+              +
+          </button>
+          <button class="btn btn-danger btn-sm">
+              -
+          </button>
+      </td>
+      <td>$ <span>500</span></td>
+    </tr>
+  </template>
+
+     <template id="template-card">
+       <div class="col-12 mb-2 col-md-4 template-card">
+         <div class="card">
+          <img src="" alt="" class="card-img-top">
+           <div class="card-body">
+             <h5>Titulo</h5>
+             <p>precio</p>
+             <button class="btn btn-dark">Comprar</button>
+           </div>
+         </div>
+     </div>
+     </template>
+
+    </section>
+    <!-- Inicio Footer -->
+</footer>
+<footer class="pie-pagina">
+  <div class="grup-1">
+       <div class="box">
+        <figure>
+          <a href="/pages/index.html">
+             <img src="/multimedia/icons/logo-footer.png" alt="logo de renacer estetica">
+          </a>
+        </figure>
+       </div>
+       <div class="box">
+        <h2>DÓNDE ENCONTRARNOS</h2>
+        <p><i class="fa-solid fa-location-dot"></i> Congreso 603 - Barrio Sur</p>
+        <h2>MEDIOS DE PAGO</h2>
+        <p><i class="fa-solid fa-money-bill-1-wave"></i> Efectivo</p>
+        <p><i class="fa-solid fa-credit-card"></i> Tarjetas de Crédito o Débito </p>
+        <p><i class="fa-solid fa-money-bill-transfer"></i> Transferencia Bancaria</p>
+       </div>
+       <div class="box">
+        <h2>CONTACTÁNOS</h2>
+        <div class="red-social">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="https://www.instagram.com/renacer.esteticatuc/?hl=es-la" class="fa fa-instagram"></a>
+          <a href="https://api.whatsapp.com/send?phone=5493815611530" class="fa fa-whatsapp"></a>
+        </div>
+       </div>
+  </div>
+  <div class="grup-2">
+    <small>&copy; 2022 <b>Alejandro Isa Galindo</b> - Todos los Derechos Reservados.</small>
+  </div>
+</footer>
+<!-- Fin Footer -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- <script src="/js/darkMode.js"></script> -->
+    <script src="/js/app.js"></script>
+</body>
+</html>

@@ -1289,6 +1289,29 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Fin FAQs */
+
+/* Inicio Carrito*/
+.seccion-carrito {
+  max-width: 1200px;
+  width: 90%;
+  margin-left: 78px;
+  background-color: #e9d9c4;
+  margin-bottom: 133px;
+}
+.tabla-carrito {
+  background-color: #e9d9c4;
+  position: relative;
+  top: 120px;
+}
+.template-card {
+  max-width: 1200px;
+  width: 90%;
+  background-color: #e9d9c4;
+  position: relative;
+  top: 140px;
+}
+/*Fin Carrito */
+
 /* Inicio Vista Mobile */
 .color-nav-mb {
   background-color: #e9d9c4;
