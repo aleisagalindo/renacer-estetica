@@ -321,6 +321,24 @@ color: #ebddcf;
 .color-nav-mb {
   background-color: #e9d9c4;
 }
+.body-inicio-turnos.dark .seccion-carrito {
+  background-color: #493c24;
+}
+.body-inicio-turnos.dark .template-card {
+  background-color: #493c24;
+}
+.body-inicio-turnos.dark .tabla-carrito {
+  background-color: #493c24;
+  color: #ebddcf;
+}
+.body-inicio-turnos.dark .card-body {
+  background-color: #493c24;
+  color: #ebddcf;
+}
+.body-inicio-turnos.dark .card-body .btn-dark {
+  background-color: #ebddcf;
+  color: #3d321d;
+}
 /*---------- Modo Oscuro ------------*/
 
 /*----------- Barra Scroll -----------*/
@@ -1299,16 +1317,21 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 133px;
 }
 .tabla-carrito {
+  font-family: 'Playfair Display', serif;
   background-color: #e9d9c4;
   position: relative;
   top: 120px;
 }
 .template-card {
+  font-family: 'Playfair Display', serif;
   max-width: 1200px;
   width: 90%;
   background-color: #e9d9c4;
   position: relative;
   top: 140px;
+}
+.template-card p {
+  font-weight: bold;
 }
 /*Fin Carrito */
 
