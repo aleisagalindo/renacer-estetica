@@ -217,7 +217,7 @@ html {
   background-color: #493c24;
 }
 .body-faq .color-nav-mb {
-  background-color: #3d321d;
+  background-color: #ebddcf;
 }
 .body-faq.dark .logo-nav-mobile {
 color: #ebddcf;
@@ -2535,6 +2535,27 @@ body::-webkit-scrollbar-thumb {
             padding-left: -2.5rem;
             position: fixed;
             z-index: 3;
+          }
+         }
+         @media (min-width: 1400px) {
+          .nav-desktop {
+            width: 87.9%;
+            background-color: #e9d9c4;
+            height: 4.68rem;
+            width: 88.5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 4.9rem;
+            padding-left: -2.5rem;
+            position: fixed;
+            z-index: 3;
+          }
+          body {
+            width: 99%;
+          }
+          section {
+            width: 99%;
           }
          }
       /* Fin @media queries */
